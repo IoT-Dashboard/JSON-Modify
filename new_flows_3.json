@@ -1,0 +1,4656 @@
+[
+    {
+        "id": "debde317875b9fac",
+        "type": "tab",
+        "label": "[Data] Bucket State ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f7af327ab49dcd5b",
+        "type": "tab",
+        "label": "[Data] System Events",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2976b3f8c60c3097",
+        "type": "tab",
+        "label": "[Data] Tracking",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fc1b005081474eee",
+        "type": "tab",
+        "label": "[Data] Andons/Breaks",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "176db046acf24cae",
+        "type": "tab",
+        "label": "[Data] GPA/Reset Global Context",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "722fb55c0b4e180b",
+        "type": "tab",
+        "label": "[UI] CSS/Bucket State",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2695f9f24cf7e4b0",
+        "type": "tab",
+        "label": "[UI] Cycle Status",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5eedfd42acb6ab9d",
+        "type": "tab",
+        "label": "[UI] Header",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "79e4e521aa2f0425",
+        "type": "tab",
+        "label": "[UI] Cycle Time/Takt Time",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "357706603463b3d3",
+        "type": "tab",
+        "label": "[UI] Andons/GPA/Bar Graph",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d2262f700e8b5c77",
+        "type": "subflow",
+        "name": "[A] Get State/Overcycle",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "623c4afc7cea16c8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 580,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "623c4afc7cea16c8",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "0dc57d42f43e78f9",
+        "type": "subflow",
+        "name": "[B] Increment Timers",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "b9890e67560e2782"
+                    },
+                    {
+                        "id": "2b8f43c6edd016a8"
+                    },
+                    {
+                        "id": "c4924938833d0612"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 500,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "b9890e67560e2782",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "a8ba1a8e7c72d5f7",
+        "type": "subflow",
+        "name": "[C] Get Operator Name/Warning Cycle",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "cac063c6b6f27a34"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 720,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "cac063c6b6f27a34",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d83bfe0b60ca7ed5",
+        "type": "subflow",
+        "name": "[D] Get SerialNo/PartNo/Quality",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 0,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "dde223d50c261533"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 400,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "dde223d50c261533",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "11c63ab4c05be4fa",
+        "type": "subflow",
+        "name": "[E] Get Andons",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "5f8604e7e9c97aa9"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 340,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "5f8604e7e9c97aa9",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "ca08316f41e559a5",
+        "type": "subflow",
+        "name": "[F] Prepare Bar Graph Data",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "1b12e8826c8eec25"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 580,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "1b12e8826c8eec25",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#87A980"
+    },
+    {
+        "id": "2741324d972f5831",
+        "type": "subflow",
+        "name": "[G] Get GPA",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "c96af7495fe6ac0d"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 340,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "c96af7495fe6ac0d",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "5d5cc90da6f3048d",
+        "type": "subflow",
+        "name": "[H] Reset Global Context",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 20,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "53e2aea779e735bb"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "a402b9419162831e",
+        "type": "subflow",
+        "name": "[I] Prepare Cycle Time Display",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 0,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "566614e55fe45209"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 400,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "566614e55fe45209",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#87A980"
+    },
+    {
+        "id": "7e09aa9c425ed0e5",
+        "type": "subflow",
+        "name": "[J] Prepare Header Display",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "417f7007debdc7cb"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 780,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "9314c925ee1a8182",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 780,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "9314c925ee1a8182",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#87A980"
+    },
+    {
+        "id": "9930c93a0d5e3d4c",
+        "type": "subflow",
+        "name": "[K] Prepare Bucket State Display",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "4ddd4811969b8475"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 800,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "ef2d150341e30ed5",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 800,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "ef2d150341e30ed5",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#87A980"
+    },
+    {
+        "id": "2bd99a7d9fe65fb6",
+        "type": "subflow",
+        "name": "[L] Prepare Cycle Status Display",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "b9fef47c75d76fad"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 700,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "c33116e743eef228",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 700,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "c33116e743eef228",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#87A980"
+    },
+    {
+        "id": "bb068e4975b3a1c1",
+        "type": "subflow",
+        "name": "[M] Prepare Overcycle Timer",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "f1784102e25347e3"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 620,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "f1784102e25347e3",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#87A980"
+    },
+    {
+        "id": "ce11f55f95e71208",
+        "type": "subflow",
+        "name": "[N] Prepare NVA Timer",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": -20,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "7ef9ae7716ee9a23"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 400,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "7ef9ae7716ee9a23",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#87A980"
+    },
+    {
+        "id": "15111a9d6510dc85",
+        "type": "subflow",
+        "name": "[IMN] Increment Timer Display",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "86ba5a129fc4df18"
+                    },
+                    {
+                        "id": "a78fa9c2c2f496e2"
+                    },
+                    {
+                        "id": "e17c7de3076190e3"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 620,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "86ba5a129fc4df18",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 660,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "a78fa9c2c2f496e2",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 680,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "e17c7de3076190e3",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#C7E9C0"
+    },
+    {
+        "id": "b5bc4f93293404da",
+        "type": "subflow",
+        "name": "[O] Set TAKT Time",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "d8372d1154c29c1a"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "TAKT_TIME",
+                "type": "str",
+                "value": "4:00"
+            }
+        ],
+        "meta": {},
+        "color": "#FFCC66",
+        "icon": "font-awesome/fa-clock-o"
+    },
+    {
+        "id": "e7429ac6990a1dad",
+        "type": "subflow",
+        "name": "[P] Prepare GPA",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "6021178f133e98cf"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 560,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "964a78f7609564fd",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#87A980"
+    },
+    {
+        "id": "f5d9a3bec530f5d4",
+        "type": "group",
+        "z": "357706603463b3d3",
+        "name": "Bar Graph",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#c8e7a7",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7d2adf994431ba55",
+            "735752284f8715b4",
+            "3cd2333a9d8a6365",
+            "359a20b6512d20f8",
+            "10e3bd70d9c0f822"
+        ],
+        "x": 34,
+        "y": 19,
+        "w": 992,
+        "h": 142
+    },
+    {
+        "id": "e0dec88326b7bedf",
+        "type": "group",
+        "z": "357706603463b3d3",
+        "name": "GPA",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffdf7f",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "0236d5831a895083",
+            "d5ce46a2c15a5ae5",
+            "5b03d6c16f2aa603",
+            "267461a9ab492e36"
+        ],
+        "x": 34,
+        "y": 199,
+        "w": 792,
+        "h": 162
+    },
+    {
+        "id": "d3f2735cedacab9d",
+        "type": "group",
+        "z": "357706603463b3d3",
+        "name": "Andon Table",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#7f8faf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "0f7183c6bd36e72f",
+            "c017f39a63a070e1",
+            "8b6565ca5f063b57"
+        ],
+        "x": 34,
+        "y": 399,
+        "w": 792,
+        "h": 82
+    },
+    {
+        "id": "5ce2cab739c5a822",
+        "type": "mqtt-broker",
+        "name": "IoT Broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6d430187a4e8a62f",
+        "type": "ui_group",
+        "name": "Working Time vs. Overcycle Time",
+        "tab": "85fad804f154fb4a",
+        "order": 5,
+        "disp": false,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "85fad804f154fb4a",
+        "type": "ui_tab",
+        "name": "All Stations",
+        "icon": "fa-truck",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2486a97f0b92b9a0",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#5b0184",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#5b0184",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#5b0184",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#8f02d0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#5b0184",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "PINpoint | IoT Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 80,
+                "gx": 20,
+                "gy": 20,
+                "cx": 20,
+                "cy": 20,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "02a52a2df456fe8a",
+        "type": "mqtt-broker",
+        "name": "QA2 IOT Broker",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0373f32ace576561",
+        "type": "ui_group",
+        "name": "Station 1",
+        "tab": "85fad804f154fb4a",
+        "order": 1,
+        "disp": false,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d47490cf09efe9bc",
+        "type": "mqtt-broker",
+        "name": "QA2 IOT Broker",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7ef3682674d06e4b",
+        "type": "ui_tab",
+        "name": "hello",
+        "icon": "fa-cog",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8bd8cbf3c40f1f99",
+        "type": "ui_group",
+        "name": "Station",
+        "tab": "7ef3682674d06e4b",
+        "order": 1,
+        "disp": false,
+        "width": 18,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3b3db93fbca84b4c",
+        "type": "ui_tab",
+        "name": "how",
+        "icon": "fa-cog",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f59bb87e697962cc",
+        "type": "ui_tab",
+        "name": "are",
+        "icon": "fa-cog",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a7ab19659da5746c",
+        "type": "ui_tab",
+        "name": "you",
+        "icon": "fa-cog",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b114a68376e01b10",
+        "type": "ui_group",
+        "name": "Station",
+        "tab": "3b3db93fbca84b4c",
+        "order": 1,
+        "disp": false,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "12ebaf6110cabd38",
+        "type": "ui_group",
+        "name": "Station",
+        "tab": "f59bb87e697962cc",
+        "order": 1,
+        "disp": false,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "26c9438cdf6ae260",
+        "type": "ui_group",
+        "name": "Station",
+        "tab": "a7ab19659da5746c",
+        "order": 1,
+        "disp": false,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "951d70129c877b2e",
+        "type": "ui_group",
+        "name": "Station 2",
+        "tab": "85fad804f154fb4a",
+        "order": 2,
+        "disp": false,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fd17cfd0eda5af83",
+        "type": "ui_group",
+        "name": "Station 3",
+        "tab": "85fad804f154fb4a",
+        "order": 3,
+        "disp": false,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cd5ad1d0bf7f8611",
+        "type": "ui_group",
+        "name": "Station 4",
+        "tab": "85fad804f154fb4a",
+        "order": 4,
+        "disp": false,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eb66bc0c77b54613",
+        "type": "ui_group",
+        "name": "Active Andon Events",
+        "tab": "85fad804f154fb4a",
+        "order": 14,
+        "disp": false,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b8f9571ba0acd9d2",
+        "type": "ui_group",
+        "name": "GPA",
+        "tab": "85fad804f154fb4a",
+        "order": 7,
+        "disp": false,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "623c4afc7cea16c8",
+        "type": "function",
+        "z": "d2262f700e8b5c77",
+        "name": "Get State/Overcycle",
+        "func": "/**\n * Processes MQTT message to update station state visuals and global context.\n * \n * @description\n * Extracts state information from `msg.payload` and assigns visual attributes based on the state number.\n * Updates the global context with the latest station state and visuals.\n * \n * Expected `msg.payload` properties:\n * - `State` (number): Current state of the station.\n * - `StationName` (string): Name of the station, used as a key in the global context.\n * - `IsPreviousOverCycle` (boolean): Overcycle status of previous cycle.\n * - `IsCurrentOverCycle` (boolean): Overcycle status of current cycle.\n * \n * Updates:\n * - Global context with station's updated state and visual properties.\n * \n * @note Does not return a message object; solely updates the global context for state management.\n */\n\n// Obtain state information from MQTT in node\nlet stateNumber = msg.payload.State;\nlet stationName = msg.payload.StationName.replace(/ /g, \"_\");\nlet prevOvercycle = msg.payload.IsPreviousOverCycle;\nlet currOvercycle = msg.payload.IsCurrentOverCycle;\n\n// Obtain the global stations object or initialize it if it doesn't exist\nlet station = global.get(stationName) || {};\n\n// Assign state properties according to the state\nlet state = \"\";\nlet color = \"\";\nlet bucket = \"https://i.ibb.co/MV2yCwc/bucket.png\";\n\nswitch (stateNumber) {\n    case 1:\n        state = \"Waiting\";\n        color = \"orangered\";\n        bucket = \"https://i.ibb.co/ft4bZhz/Orange-Bucket.png\"\n        break;\n    case 2:\n        state = \"Available\";\n        color = \"red\";\n        bucket = \"https://i.ibb.co/JjjTrpL/Red-Bucket.png\"\n        break;\n    case 3:\n        state = \"Suspended\";\n        color = \"darkorange\";\n        bucket = \"https://i.ibb.co/RGFqG6x/Yellow-Bucket.png\";\n        break;\n    case 4:\n        state = \"Working\";\n        color = \"blue\";\n        bucket = \"https://i.ibb.co/DCH2scV/Blue-Bucket.png\";\n        break;\n    case 5:\n        state = \"Completed\";\n        color = \"green\";\n        bucket = \"https://i.ibb.co/mDN3Gqm/Green-Bucket.png\";\n        break;\n}\n\n// Assign values to stations object and save to global contextual\nstation = {\n    ...station,\n    state: state,\n    color: color,\n    bucket: bucket,\n    prevOvercycle: prevOvercycle,\n    currOvercycle: currOvercycle,\n    stateNumber: stateNumber\n};\n\nglobal.set(stationName, station);\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9890e67560e2782",
+        "type": "function",
+        "z": "0dc57d42f43e78f9",
+        "name": "Increment Cycle Time",
+        "func": "/**\n * Filters and processes specific station data from the global context, updating serial durations and compiling a list of active stations.\n * \n * @description\n * This function filters out certain keys from the global context based on predefined criteria, focuses on stations that are currently working, \n * and increments the duration for the current serial number associated with those stations.\n * It compiles a list of station keys that meet these conditions and assigns this list to the outgoing message payload.\n * \n * Exclusions:\n * - Keys ending with '_serials' and '_andons', and specific keys like 'timeData', 'lineMetrics', 'breakStatus' are excluded from processing.\n * \n * Processes:\n * - Only processes stations whose state is 'Working' and have a current serial number.\n * - Increments the duration for the current serial number associated with each qualifying station.\n * \n * Outputs:\n * - `msg.payload` (array): List of station keys that are actively processing or have an update during this cycle.\n * \n * @returns {object} The message object with the updated payload containing the list of active or updated stations.\n */\n\nlet shouldExcludeKey = key =>\n    key.endsWith('_serials') ||\n    key.endsWith('_andons') ||\n    ['timeData', 'lineMetrics', 'breakStatus'].includes(key);\n\nlet stationKeys = global.keys().filter(key => !shouldExcludeKey(key));\nlet stations = [];\n\nstationKeys.forEach(stationKey => {\n    let station = global.get(stationKey);\n    if (station.state === 'Working' && station.currSerialNo) {\n        let currSerialNo = station.currSerialNo;\n        let stationSerials = global.get(stationKey + '_serials');\n\n        if (stationSerials[currSerialNo]) {\n            stationSerials[currSerialNo].duration += 1;\n        }\n        \n        global.set(stationKey + '_serials', stationSerials);\n    } \n    \n    stations.push(stationKey);\n});\n\nmsg.payload = stations;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b8f43c6edd016a8",
+        "type": "function",
+        "z": "0dc57d42f43e78f9",
+        "name": "Increment Andon Time",
+        "func": "/**\n * Updates timers for triggered and resolving andon events across all stations in the global context.\n * \n * @description\n * Iterates over all station keys that store andon data, specifically those ending with '_andons'.\n * For each station, updates timers for both individual andons and aggregates totals if the andons are either triggered or resolving.\n * The updated data is then saved back into the global context, aiding in the management of andon event durations.\n * \n * Processes:\n * - Selects keys ending with '_andons' for processing.\n * - Increments the `triggeredTimer` if an andon is currently triggered.\n * - Increments the `resolvingTimer` if an andon is in the process of resolving.\n * - Updates are also aggregated and recorded in a `totals` object within each station's andons data.\n * \n * Updates:\n * - Global context with new timer values for andons, enhancing oversight and management of andon statuses.\n * \n * @note Manages the updating of andon timers without returning any message object, focusing solely on internal state updates.\n */\n\nlet stationKeys = global.keys().filter(key => key.endsWith('_andons'));\n\nstationKeys.forEach(station => {\n    let stationAndons = global.get(station);\n    Object.keys(stationAndons).forEach(key => {\n        let andon = stationAndons[key];\n        if (andon.hasOwnProperty('triggered')) {\n            if (andon.triggered) {\n                andon.triggeredTimer += 1;\n                stationAndons.totals.triggeredTimer += 1;\n            } else if (andon.resolving) {\n                andon.resolvingTimer += 1;\n                stationAndons.totals.resolvingTimer += 1;\n            }\n        }\n    });\n\n    global.set(station, stationAndons);\n});\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4924938833d0612",
+        "type": "function",
+        "z": "0dc57d42f43e78f9",
+        "name": "Increment State Timers",
+        "func": "/**\n * Updates time tracking data for each station based on its current state and overcycle status.\n * \n * @description\n * Filters and processes keys from the global context to update or initialize time tracking data for each station.\n * It increments counters based on the station's current operational state and tracks overcycle occurrences.\n * \n * Processes:\n * - Excludes keys related to serial data, andon data, and specific system data like `timeData`, `lineMetrics`, and `breakStatus`.\n * - Initializes default time tracking structure for stations if not already present.\n * - Increments the appropriate time counters based on the station's current state and overcycle status.\n * \n * Updates:\n * - `timeData` in the global context with updated operational time counters and overcycle data for each station.\n * \n * Expected `global.keys()` properties:\n * - Excludes keys ending with '_serials', '_andons', and keys explicitly named 'timeData', 'lineMetrics', 'breakStatus'.\n * \n * @note This script manages the updating of operational time data without returning any message object, focusing solely on internal state updates in the global context.\n */\n\nlet shouldExcludeKey = key =>\n    key.endsWith('_serials') ||\n    key.endsWith('_andons') ||\n    ['timeData', 'lineMetrics', 'breakStatus'].includes(key);\n\nlet stationNames = global.keys().filter(key => !shouldExcludeKey(key));\n\nlet timeData = global.get('timeData') || {};\nlet breakStatus = global.get('breakStatus');\n\nstationNames.forEach(stationName => {\n    // Initialize station in timeData if it doesn't exist\n    if (!timeData[stationName]) {\n        timeData[stationName] = {\n            waiting: 0,\n            available: 0,\n            suspended: 0,\n            working: 0,\n            completed: 0,\n            overcycle: 0\n        };\n    }\n\n    let station = global.get(stationName);\n\n    if (station && station.state && !breakStatus) {\n        timeData[stationName][station.state.toLowerCase()] += 1;\n        if (station.currOvercycle === true) {\n            timeData[stationName].overcycle += 1;\n        }\n    }\n});\n\nglobal.set('timeData', timeData);\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cac063c6b6f27a34",
+        "type": "function",
+        "z": "a8ba1a8e7c72d5f7",
+        "name": "Get Operator Name/Warning Cycle/Curr Serial No",
+        "func": "/**\n * Processes MQTT message to update operator information, the current serial number, and warning status. \n * \n * @description\n * Extracts system event information from `msg.payload` and stores the operator name, current working serial number, \n * and warning status if applicable. Updates the global context with the latest station state and visuals.\n * \n * Expected `msg.payload` properties:\n * - `EventName` (string): Name of the current system event.\n * - `StationName` (string): Name of the station, used as a key in the global context.\n * - `Description` (string): Description of the current system event.\n * - `SerialNumber` (string): The current serial number being worked at the station.\n * \n * Updates:\n * - Global context with station's current operator, serial number, and warning status.\n * \n * @note Does not return a message object; solely updates the global context for state management.\n */\n\n// Obtain event information from MQTT in node\nlet eventName = msg.payload.EventName;\nlet stationName = msg.payload.StationName.replace(/ /g, \"_\");\nlet description = msg.payload.Description;\nlet serialNo = msg.payload.SerialNumber;\n\n// Obtain the global stations object or initialize it if it doesn't exist\nlet station = global.get(stationName) || {};\n\n// Set the operator name or warning state based on event\nlet operatorName = station.operatorName || '';\nlet warning = station.warning || false;\nlet currSerialNo = station.currSerialNo;\n\nif (serialNo) {\n    currSerialNo = serialNo;\n}\n\nif (eventName === 'Cycle Time Warning Event') {\n    warning = true;\n} else if (eventName === 'User Login Event') {\n    operatorName = description;\n} else if (eventName === 'New Serial Number Event') { \n    warning = false;\n} else if (eventName === 'User Logout Event') {\n    warning = false;\n    operatorName = '';\n}\n\n// Assign values to stations object and save to global context\nstation = {\n    ...station,\n    operatorName: operatorName,\n    warning: warning,\n    currSerialNo: currSerialNo\n};\n\nglobal.set(stationName, station);\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dde223d50c261533",
+        "type": "function",
+        "z": "d83bfe0b60ca7ed5",
+        "name": "Get SerialNo/PartNo/Quality",
+        "func": "/**\n * Processes MQTT message to update serial number tracking and global context.\n * \n * @description\n * Extracts serial number details from `msg.payload` and manages serial data in the global context.\n * Initializes or updates the serial number object with key details such as part number and shippable state.\n * \n * Expected `msg.payload` properties:\n * - `SerialNo` (string): The serial number of the item.\n * - `PartNo` (string): The part number associated with the item.\n * - `ShippableState` (string): The quality or shippable status of the item.\n * - `StationName` (string): The name of the station, used as a key prefix in the global context.\n * \n * Updates:\n * - Global context with an object keyed by `StationName_serials` that tracks serialization data.\n * \n * @note Does not return a message object; solely updates the global context for serialization tracking.\n */\n\n// Obtain tracking information from MQTT in node\nlet serialNo = msg.payload.SerialNo;\nlet partNo = msg.payload.PartNo;\nlet shippableState = msg.payload.ShippableState;\nlet stationName = msg.payload.StationName.replace(/ /g, \"_\");\n\n// Obtain the global stations object or initialize it if it doesn't exist\nlet serials = global.get(stationName + \"_serials\") || {};\nif (serialNo && !serials[serialNo]) {\n    serials[serialNo] = { partNo: partNo, duration: 0, quality: shippableState };\n}\n\n// Update the quality if changed\nif (serials[serialNo] && shippableState) {\n    serials[serialNo].quality = shippableState;\n}\n\nglobal.set(stationName + \"_serials\", serials);\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f8604e7e9c97aa9",
+        "type": "function",
+        "z": "11c63ab4c05be4fa",
+        "name": "Get Andons",
+        "func": "/**\n * Processes MQTT message to manage station andons and updates in the global context.\n * \n * @description\n * Extracts Andon details such as state, description, and event name from `msg.payload`.\n * Manages Andon objects in the global context based on their current state, updating their status,\n * timers, and description as necessary.\n * \n * Expected `msg.payload` properties:\n * - `State` (string): Current state of the Andon, represented as '0' (resolved), '1' (resolving), or '2' (triggered).\n * - `Description` (string): Description of the Andon event.\n * - `EventName` (string): Name of the Andon event.\n * - `StationName` (string): Name of the station, used as a key prefix in the global context.\n * \n * Updates:\n * - Global context with an object keyed by `StationName_andons` that stores detailed state, timers, and counts for each Andon event.\n * \n * @note Updates the global context to reflect the latest state and information of Andons without returning any message object.\n */\n\n// Obtain andon name, description, and state from the mqtt payload\nlet andonState = msg.payload.State;\nlet andonDescription = msg.payload.Description;\nlet andonName = msg.payload.EventName;\nlet stationName = msg.payload.StationName.replace(/ /g, \"_\");\n\n// Obtain andon object from global context, or initialize it if it doesn't exist\nlet andons = global.get(stationName + \"_andons\") || { totals: { triggeredTimer: 0, resolvingTimer: 0, counter: 0 } };\n\n// If the andon name is not in the andons object when the andon is triggered, add it\nif (!andons[andonName] && andonState === '2') {\n    andons.totals.counter += 1;\n    andons[andonName] = {\n        andonDescription: andonDescription,\n        triggered: true,\n        resolving: false,\n        triggeredTimer: 0,\n        resolvingTimer: 0\n    };\n\n    // If the andon name is present in the andons object and the andon state is 1, set the resolving boolean to true\n} else if (andons[andonName] && andonState === '1') {\n    andons[andonName].triggered = false;\n    andons[andonName].resolving = true;\n\n    // If the andon state is 0, set the triggered & resolving booleans to false\n} else if (andons[andonName] && andonState === '0') {\n    andons[andonName].triggered = false;\n    andons[andonName].resolving = false;\n    andons[andonName].andonDescription = '';\n    andons[andonName].triggeredTimer = 0;\n    andons[andonName].resolvingTimer = 0;\n\n    // If the andon name is present in the andons object and the andon state is 2, set the triggered boolean to true and add the andon description\n} else if (andons[andonName] && andonState === '2') {\n    andons[andonName].triggered = true;\n    andons[andonName].andonDescription = andonDescription;\n    andons.totals.counter += 1;\n}\n\n// Set the andons object in the flow context\nglobal.set(stationName + \"_andons\", andons);\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b12e8826c8eec25",
+        "type": "function",
+        "z": "ca08316f41e559a5",
+        "name": "Prepare Bar Graph Data",
+        "func": "/**\n * Prepares and formats data for a bar graph visualization of time spent in various station states.\n * \n * @description\n * This script processes time data stored in the global context to compute and organize time spent in different operational states for each station.\n * The time data includes working time, overcycle time, and non-value added time (combined time spent in waiting, available, suspended, and completed states).\n * This data is formatted for use in a bar graph, showing a comparative view of different times across all stations.\n * \n * Processes:\n * - Accesses 'timeData' from the global context, which contains time metrics for each station.\n * - Calculates time metrics for each station in minutes, summarizing working time, overcycle time, and non-value added time.\n * - Organizes this data into arrays that can be directly used for plotting in a bar graph.\n * \n * Outputs:\n * - `msg.payload`: An object that includes series labels, data arrays for each time metric, and station labels. \n * \n * @returns {object} The message object with payload formatted for bar graph visualization, including time data for each station categorized into different operational states.\n */\n\n\nlet timeData = global.get('timeData');\nlet stationData = [];\n\n// Loop through each station in timeData\nObject.entries(timeData).forEach(([station, stationTime]) => {\n    if (stationTime) {\n        const nonValueTime = (stationTime.waiting + stationTime.available + stationTime.suspended + stationTime.completed) / 60;\n        const stationInfo = {\n            label: station,\n            workingTime: stationTime.working / 60,\n            overcycleTime: stationTime.overcycle / 60,\n            nonValueTime: nonValueTime\n        };\n        stationData.push(stationInfo);\n    }\n});\n\n\n// Sort the array based on the label\nstationData.sort((a, b) => a.label.localeCompare(b.label));\n\n// Initialize arrays for labels, workingTimes, and overcycleTimes\nlet labels = [];\nlet workingTimes = [];\nlet overcycleTimes = [];\nlet nonValueTimes = [];\n\n// Populate the sorted data into individual arrays\nfor (let i = 0; i < stationData.length; i++) {\n    labels.push(stationData[i].label);\n    workingTimes.push(stationData[i].workingTime);\n    overcycleTimes.push(stationData[i].overcycleTime);\n    nonValueTimes.push(stationData[i].nonValueTime);\n}\n\n// Create the bar graph payload dynamically\nmsg.payload = [\n    {\n        series: ['Working Time', 'Overcycle Time', 'Non-Value Added Time'],\n        data: [workingTimes, overcycleTimes, nonValueTimes],\n        labels: labels\n    }\n];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c96af7495fe6ac0d",
+        "type": "function",
+        "z": "2741324d972f5831",
+        "name": "Get GPA",
+        "func": "/**\n * Processes MQTT message to update production line metrics in the global context.\n * \n * @description\n * Extracts production line metrics such as build target, actual production numbers, \n * and actual good production numbers from `msg.payload`. Separately updates planned\n * production numbers to avoid overwriting with null values from different MQTT sources.\n * Updates the global context with the latest metrics for goal, actual, actual good, and planned values.\n * \n * Expected `msg.payload` properties:\n * - `BuildTarget` (number): The production goal or target number of items to be produced.\n * - `Actual` (number): The actual number of items produced.\n * - `ActualGood` (number): The number of items produced that meet quality standards.\n * \n * Updates:\n * - Global context with an object `lineMetrics` that stores detailed metrics about the production line's performance.\n * \n * @note Manages the updating of production line metrics without returning any message object, ensuring data integrity by handling planned metrics separately.\n */\n\nlet goal = msg.payload.BuildTarget;\nlet actual = msg.payload.Actual;\nlet actualGood = msg.payload.ActualGood;\nlet planned = msg.payload.BuildTarget\n\nlet lineMetrics = global.get('lineMetrics') || {};\n\nif (goal && actual && actualGood) {\n    lineMetrics = {\n        ...lineMetrics,\n        goal: goal,\n        actual: actual,\n        actualGood\n    };\n}\n\n// Planned is from a different MQTT node than goal, so we separate it to avoid writing null\nif (planned) {\n    lineMetrics = {\n        ...lineMetrics,\n        planned: planned\n    }\n}\n\nglobal.set('lineMetrics', lineMetrics);\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53e2aea779e735bb",
+        "type": "function",
+        "z": "5d5cc90da6f3048d",
+        "name": "Reset Global Variables",
+        "func": "let globalContextVars = global.keys();\nglobalContextVars.forEach((varName) => {\n    global.set(varName, undefined);\n});\n\nglobal.set('breakStatus', true);\n\nconsole.log('Global context variables have been deleted.');\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "566614e55fe45209",
+        "type": "function",
+        "z": "a402b9419162831e",
+        "name": "Prepare Cycle Time Output",
+        "func": "/**\n * Formats a given duration in seconds to a \"M:SS\" format and prepares HTML content representing the cycle time for a specific station.\n * \n * @description\n * This function takes a number of seconds and converts it into a formatted string representing minutes and seconds.\n * It retrieves the current serial's duration from the station-specific serials data, formats this duration, and prepares an HTML snippet displaying the time alongside the station's takt time.\n * The display also includes an animation class that reflects the station's current state (e.g., working, completed, overcycle, or warning).\n * \n * Functions:\n * - `formatDuration(seconds)`: Converts a raw duration in seconds to a formatted string \"M:SS\".\n * \n * Processes:\n * - Retrieves station and its serials data from the global context.\n * - Formats the duration using the `formatDuration` function for the current serial based on the station's state.\n * - Applies a conditional animation class based on the station's operational state.\n * \n * Outputs:\n * - `msg.html`: An HTML snippet that provides a visual representation of the cycle time and takt time for the station, enhanced with visual cues for the operational state.\n * \n * @returns {object} The modified message object containing the HTML representation of the station's cycle time.\n */\n\n\n\nfunction formatDuration(seconds) {\n    // Calculate minutes and remaining seconds\n    const minutes = Math.floor(seconds / 60);\n    const remainingSeconds = seconds % 60;\n\n    // Format minutes as a number (without leading zero) and seconds to always have two digits\n    const formattedMinutes = minutes.toString();\n    const formattedSeconds = remainingSeconds.toString().padStart(2, '0');\n\n    // Combine the formatted minutes and seconds\n    return `${formattedMinutes}:${formattedSeconds}`;\n}\n\n// Obtain station information\nlet stationName = msg.payload;\nlet station = global.get(stationName);\nlet serials = global.get(stationName + \"_serials\");\n\n// Prepare msg payload\nif (station && serials) {\n    let currSerialNo = station.currSerialNo;\n    let duration = '0:00';\n    let taktTime = station.taktTime;\n    let animationClass = 'normal';\n\n    if (['Working', 'Completed'].includes(station.state)) {\n        duration = formatDuration(serials[currSerialNo].duration);\n    }\n\n    if (station.state === 'Completed') {\n        animationClass = 'paused';\n    } else if (station.currOvercycle) {\n        animationClass = 'overcycle';\n    } else if (station.warning) {\n        animationClass = 'warning';\n    }\n\n    // Prepare html for station views\n    msg.html = `\n        <div class=\"cycle-time-div-outer\">\n            <hr class=\"cycle-time-hr\">\n            <div class=\"cycle-time-div-inner\">\n                <div class=\"cycle-time-div-content ${animationClass}\">\n                    ${duration} <span>/ ${taktTime}</span>\n                </div>\n            </div>\n            <hr class=\"cycle-time-hr\">\n        </div>\n    `;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9314c925ee1a8182",
+        "type": "function",
+        "z": "7e09aa9c425ed0e5",
+        "name": "Prepare Header Display",
+        "func": "/**\n * Prepares and returns HTML content for displaying detailed station and serial information.\n * \n * @description\n * Retrieves station and its corresponding serials data from the global context based on the `StationName` from `msg.payload`.\n * Constructs HTML content to visually represent detailed information about the station's current operation and the serials processed, including operator details and part numbers.\n * Two separate HTML messages are prepared: one formatted for a single station view and another for a multi-station view.\n * \n * Expected `msg.payload` properties:\n * - `StationName` (string): The name of the station, used to retrieve specific details from the global context.\n * \n * Updates:\n * - Based on the state and quality of serials, adjusts visual representations such as image URLs and displays relevant operational data.\n * \n * Outputs:\n * - `msg1` (object): Contains HTML formatted content for a detailed single station display.\n *     - `html` (string): HTML code with dynamic styling displaying the station name, operator, and serial data.\n * - `msg2` (object): Contains HTML formatted content for a detailed multi-station display.\n *     - `html` (string): HTML code similar to `msg1` but adapted for visual consistency across multiple stations.\n * \n * @returns {array} An array containing two message objects (`msg1`, `msg2`) with HTML content for different display contexts.\n * If neither station nor serials data is found, returns the original `msg` object.\n */\n\n// Obtain station information\nlet stationName = msg.payload.StationName.replace(/ /g, \"_\");\nlet station = global.get(stationName);\nlet serials = global.get(stationName + \"_serials\");\n\n// Prepare msg payload\nif (station && serials) {\n    let currSerialNo = station.currSerialNo;\n    let partNo = '';\n    let serialNo = '';\n    let operatorName = station.operatorName;\n    stationName = stationName.replace(/_/g, \" \");\n    let quality = serials[currSerialNo].quality;\n    let imageUrl = 'https://i.ibb.co/10CHnZy/orangetruck.png';\n\n\n    if (['Working', 'Completed'].includes(station.state)) {\n        partNo = serials[currSerialNo].partNo;\n        serialNo = currSerialNo;\n    }\n\n    if (quality === \"Green\") {\n        imageUrl = 'https://i.ibb.co/2N0S6rW/greentruck.png';\n    } \n\n    let msg1 = {};\n    let msg2 = {};\n\n    // Prepare html for single station view\n    msg1.html = `\n        <div class=\"header\">\n            <div></div> <!-- Empty grid item -->\n            <div class=\"headerStation\">\n                <div\n                    ng-style=\"{'color': (${stationName}) ? '' : 'gray', 'font-style': (${stationName}) ? 'normal' : 'italic'}\">\n                    ${stationName}\n                </div>\n            </div>\n            <div ng-if=\"${quality}\">\n                <img class=\"headerImage\" src=\"${imageUrl}\" alt=\"${quality} Truck\">\n            </div>\n        </div>\n        <div class=\"header equal\">\n            <div>${operatorName}</div>\n            <div>${serialNo}</div>\n            <div>${partNo}</div>\n        </div>`;\n\n    // Prepare html for multi station view\n    msg2.html = `\n        <div class=\"headerMulti\">\n            <div></div> <!-- Empty grid item -->\n            <div class=\"headerStationMulti\">\n                <div\n                    ng-style=\"{'color': (${stationName}) ? '' : 'gray', 'font-style': (${stationName}) ? 'normal' : 'italic'}\">\n                    ${stationName}\n                </div>\n            </div>\n            <div ng-if=\"${quality}\">\n                <img class=\"headerImageMulti\" src=\"${imageUrl}\" alt=\"${quality} Truck\">\n            </div>\n        </div>\n        <div class=\"headerMulti equalMulti\">\n            <div>${operatorName}</div>\n            <div>${serialNo}</div>\n            <div>${partNo}</div>\n        </div>`;\n\n    return [msg1, msg2];\n}\n\nreturn msg;",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 120,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "417f7007debdc7cb",
+        "type": "delay",
+        "z": "7e09aa9c425ed0e5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 210,
+        "y": 120,
+        "wires": [
+            [
+                "9314c925ee1a8182"
+            ]
+        ]
+    },
+    {
+        "id": "ef2d150341e30ed5",
+        "type": "function",
+        "z": "9930c93a0d5e3d4c",
+        "name": "Prepare Bucket State Display",
+        "func": "/**\n * Prepares and returns HTML content for displaying station information in both single and multi-station views.\n * \n * @description\n * Retrieves station information from the global context based on the `StationName` from `msg.payload`.\n * Constructs HTML content to visually represent the station's current state using dynamic styling and images.\n * Two separate HTML messages are prepared: one for a single station view and another for a multi-station view.\n * \n * Expected `msg.payload` properties:\n * - `StationName` (string): The name of the station, used to retrieve specific station details from the global context.\n * \n * Outputs:\n * - `msg1` (object): Contains HTML formatted content for a single station display.\n *     - `html` (string): HTML code including station state, color-coded text, and an image if applicable.\n * - `msg2` (object): Contains HTML formatted content suitable for a multi-station display.\n *     - `html` (string): HTML code including station state in a more compact form, color-coded text, and an image if applicable.\n * \n * @returns {array} An array containing two message objects (`msg1`, `msg2`) with HTML content for different display contexts.\n */\n\n// Obtain station information\nlet stationName = msg.payload.StationName.replace(/ /g, \"_\");\nlet station = global.get(stationName);\n\n// Prepare msg payload\nif (station) {\n    let stateNumber = station.stateNumber;\n    let color = station.color;\n    let text = station.state;\n    let imageUrl = station.bucket;\n\n    let msg1 = {};\n    let msg2 = {};\n\n    // Prepare html code for single station view\n    msg1.html = `\n        <div class=\"container\">\n            <div class=\"text-container\">\n                <span>\n                    Bucket State: <span style=\"color: ${color};\">${text}</span>\n                </span>\n            </div>\n            <div class=\"image-container\" ng-if=\"${stateNumber} !== undefined\">\n                <img src=\"${imageUrl}\" alt=\"Bucket Image\">\n            </div>\n        </div>\n        <hr class=\"bucket-state-hr\">`;\n\n    // Prepare html code for multi station view\n    msg2.html = `\n        <div class=\"containerMulti\">\n            <div class=\"text-containerMulti\">\n                <span>\n                    State: <span style=\"color: ${color};\">${text}</span>\n                </span>\n            </div>\n            <div class=\"image-containerMulti\" ng-if=\"${stateNumber} !== undefined\">\n                <img src=\"${imageUrl}\" alt=\"Bucket Image\">\n            </div>\n        </div>`;\n\n    return [msg1, msg2];\n}\n\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 80,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4ddd4811969b8475",
+        "type": "delay",
+        "z": "9930c93a0d5e3d4c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "ef2d150341e30ed5"
+            ]
+        ]
+    },
+    {
+        "id": "c33116e743eef228",
+        "type": "function",
+        "z": "2bd99a7d9fe65fb6",
+        "name": "Prepare Cycle Status Display",
+        "func": "/**\n * Prepares and returns HTML content for displaying station cycle status in both single and multi-station views.\n * \n * @description\n * Retrieves station cycle status information from the global context based on the `StationName` from `msg.payload`.\n * Based on the station's current and previous cycle status, as well as any warnings, adjusts the visual indicators such as text color and images.\n * Constructs HTML content to visually represent the station's cycle status for display purposes.\n * Two separate HTML messages are prepared: one for a single station view and another for a multi-station view.\n * \n * Expected `msg.payload` properties:\n * - `StationName` (string): The name of the station, used to retrieve specific station cycle status details from the global context.\n * \n * Updates:\n * - Uses station cycle status data to determine the display status, color, and associated image.\n * \n * Outputs:\n * - `msg1` (object): Contains HTML formatted content for a single station display.\n *     - `html` (string): HTML code with a status label and a color-coded status text, along with a relevant image.\n * - `msg2` (object): Contains HTML formatted content suitable for a multi-station display.\n *     - `html` (string): HTML code similar to `msg1` but formatted for use in a multi-station context.\n * \n * @returns {array} An array containing two message objects (`msg1`, `msg2`) with HTML content for different display contexts.\n */\n\n\n// Obtain station information\nlet stationName = msg.payload.StationName.replace(/ /g, \"_\");\nlet station = global.get(stationName);\n\n// Prepare html\nif (station) {\n    // Default values\n    let status = 'On Time';\n    let color = 'green';\n    let imageUrl = 'https://i.ibb.co/5kdwBbR/clock-3-Copy.png';\n    \n    // Change values is neccessary\n    if (station.currOvercycle || station.prevOvercycle) {\n        status = 'Overcycle';\n        color = 'red';\n        imageUrl = 'https://i.ibb.co/6N8z6bt/clock-3.png';\n    } else if (station.warning) {\n        status = 'Warning';\n        color = 'darkorange';\n        imageUrl = 'https://i.ibb.co/Y80Dcdk/orange.png';\n    } \n\n    let msg1 = {};\n    let msg2 = {};\n\n    // Prepare html for single station view\n    msg1.html = `\n        <div class=\"container\">\n            <div class=\"text-container\">\n                <span>Cycle Status: </span>\n                <span style=\"color: ${color}\">${status}</span>\n            </div>\n            <div class=\"image-container\" ng-if=\"${status} !== undefined\">\n                <img class=\"status-imageMulti\" src=\"${imageUrl}\" alt=\"Image\">\n            </div>\n        </div>\n        <hr class=\"bucket-state-hr\">`;\n\n    // Prepare html for multi station view\n    msg2.html = `\n        <div class=\"containerMulti\">\n            <div class=\"text-containerMulti\">\n                <span>Status: </span>\n                <span style=\"color: ${color}\">${status}</span>\n            </div>\n            <div class=\"image-containerMulti\" ng-if=\"${status} !== undefined\">\n                <img class=\"status-imageMulti\" src=\"${imageUrl}\" alt=\"Image\">\n            </div>\n        </div>\n    `;\n\n    return [msg1, msg2]\n}\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 80,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b9fef47c75d76fad",
+        "type": "delay",
+        "z": "2bd99a7d9fe65fb6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "c33116e743eef228"
+            ]
+        ]
+    },
+    {
+        "id": "f1784102e25347e3",
+        "type": "function",
+        "z": "bb068e4975b3a1c1",
+        "name": "Prepare Overcycle Timer",
+        "func": "/**\n * Formats a given duration in seconds to a \"MM:SS\" format and prepares HTML content representing overcycle time for a specific station.\n * \n * @description\n * This function takes a number of seconds and converts it into a formatted string representing minutes and seconds. \n * It retrieves station-specific overcycle time data, formats this duration, and prepares an HTML snippet displaying the time.\n * The time is color-coded based on whether the station is currently in an overcycle state.\n * \n * Functions:\n * - `formatDuration(seconds)`: Converts a raw duration in seconds to a formatted string \"MM:SS\".\n * \n * Processes:\n * - Retrieves specific station time data from the global context.\n * - Formats the overcycle time using the `formatDuration` function.\n * - Selects a color for the displayed time, red if the station is currently in overcycle, otherwise black.\n * \n * Outputs:\n * - `msg.html`: An HTML snippet that provides a visual representation of the overcycle time for the station.\n * \n * @returns {object} The modified message object containing the HTML representation of overcycle time.\n */\n\nfunction formatDuration(seconds) {\n    // Calculate minutes and remaining seconds\n    const minutes = Math.floor(seconds / 60);\n    const remainingSeconds = seconds % 60;\n\n    // Format minutes and seconds to always have two digits\n    const formattedMinutes = minutes.toString().padStart(2, '0');\n    const formattedSeconds = remainingSeconds.toString().padStart(2, '0');\n\n    // Combine the formatted minutes and seconds\n    return `${formattedMinutes}:${formattedSeconds}`;\n}\n\n// Obtain station information\nlet stationName = msg.payload;\nlet timeData = global.get('timeData');\nlet station = global.get(stationName);\nlet stateTimes = timeData[stationName];\n\n// Prepare msg payload\nif (timeData && station && stateTimes) {\n    let duration = formatDuration(stateTimes.overcycle);\n    \n    let color = 'black';\n    if (station.currOvercycle) {\n        color = 'red';\n    }\n\n    msg.html = `\n        <div class=\"container\">\n            <div class=\"extra-timer-div-inner\">\n                <span class=\"extra-timer-span-label\">Overcycle Time</span>\n                <div class=\"extra-timer-div-content\">\n                    <span class=\"cycle-time-div-content\" style=\"color: ${color};\">${duration}</span>\n                </div>\n            </div>\n        </div>\n    `;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ef9ae7716ee9a23",
+        "type": "function",
+        "z": "ce11f55f95e71208",
+        "name": "Prepare Non-Value Added Timer",
+        "func": "/**\n * Formats a given duration in seconds to a \"MM:SS\" format and prepares HTML content representing non-value added time for a specific station.\n * \n * @description\n * This function takes a number of seconds and converts it into a formatted string representing minutes and seconds. \n * Additionally, it retrieves station-specific time data, calculates the total non-value added time, and prepares an HTML snippet \n * displaying this time with color coding based on the station's current operational state.\n * \n * Functions:\n * - `formatDuration(seconds)`: Converts a raw duration in seconds to a formatted string \"MM:SS\".\n * \n * Processes:\n * - Retrieves station-specific time data from the global context.\n * - Calculates non-value added time by summing up specified state durations.\n * - Formats the non-value time using the `formatDuration` function.\n * - Depending on the station's current state, it selects a color for the displayed time.\n * \n * Outputs:\n * - `msg.html`: An HTML snippet that provides a visual representation of the non-value added time for the station.\n * \n * @returns {object} The modified message object containing the HTML representation of non-value added time.\n */\n\nfunction formatDuration(seconds) {\n    // Calculate minutes and remaining seconds\n    const minutes = Math.floor(seconds / 60);\n    const remainingSeconds = seconds % 60;\n\n    // Format minutes and seconds to always have two digits\n    const formattedMinutes = minutes.toString().padStart(2, '0');\n    const formattedSeconds = remainingSeconds.toString().padStart(2, '0');\n\n    // Combine the formatted minutes and seconds\n    return `${formattedMinutes}:${formattedSeconds}`;\n}\n\n// Obtain station information\nlet stationName = msg.payload;\nlet timeData = global.get('timeData');\nlet station = global.get(stationName);\nlet stateTimes = timeData[stationName];\n\n// Prepare msg payload\nif (timeData && station && stateTimes) {\n    let nonValueTime = stateTimes.waiting + stateTimes.available + stateTimes.suspended + stateTimes.completed;\n    let duration = formatDuration(nonValueTime);\n    \n    let color = 'black';\n    if (station.stateNumber !== 4) {\n        color = '#fa623b';\n    }\n\n    msg.html = `\n        <div class=\"container\">\n            <div class=\"extra-timer-div-inner\">\n                <span class=\"extra-timer-span-label\">Non-Value Added Time</span>\n                <div class=\"extra-timer-div-content\">\n                    <span class=\"cycle-time-div-content\" style=\"color: ${color};\">${duration}</span>\n                </div>\n            </div>\n        </div>\n    `;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e17c7de3076190e3",
+        "type": "subflow:a402b9419162831e",
+        "z": "15111a9d6510dc85",
+        "name": "",
+        "x": 470,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a78fa9c2c2f496e2",
+        "type": "subflow:bb068e4975b3a1c1",
+        "z": "15111a9d6510dc85",
+        "name": "",
+        "x": 460,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86ba5a129fc4df18",
+        "type": "subflow:ce11f55f95e71208",
+        "z": "15111a9d6510dc85",
+        "name": "",
+        "x": 440,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8372d1154c29c1a",
+        "type": "function",
+        "z": "b5bc4f93293404da",
+        "name": "Set TAKT Time",
+        "func": "// Obtain station information\nlet stationName = msg.payload.StationName.replace(/ /g, \"_\");\nlet station = global.get(stationName);\n\nif (station) {\n    station.taktTime = env.get('TAKT_TIME'); // CHANGE TAKT TIME HERE\n    global.set(stationName, station);\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "964a78f7609564fd",
+        "type": "function",
+        "z": "e7429ac6990a1dad",
+        "name": "Extract GPA",
+        "func": "/**\n * Retrieves and processes production line metrics to evaluate and present actual performance against planned goals.\n *\n * @description\n * This script accesses the 'lineMetrics' object from the global context, which contains data about production goals, planned production quantities, and actual production quantities.\n * It calculates the difference between actual and planned production, then formats this data into a message payload for further use.\n * The color attribute of the message is set based on whether the actual production meets or falls short of the planned production, aiding in quick visual assessment.\n *\n * Processes:\n * - Retrieves 'lineMetrics' from the global context.\n * - Calculates the difference between actual production and planned goals.\n * - Adds a color indicator to the message based on whether the production deficit is positive (green) or negative (red).\n *\n * Outputs:\n * - `msg.payload`: An object containing the goal, planned, actual, and the difference between actual and planned production.\n * - `msg.color`: A string ('red' or 'green') indicating whether the production is below or above the planned figures, respectively.\n *\n * @returns {object} The message object updated with payload and color properties suitable for visual representation or further processing.\n */\n\n\nlet lineMetrics = global.get('lineMetrics');\n\nif (lineMetrics) {\n    msg.payload = {\n        goal: lineMetrics.goal,\n        planned: lineMetrics.planned,\n        actual: lineMetrics.actual,\n        difference: lineMetrics.actual - lineMetrics.planned\n    };\n\n    if (msg.payload.difference < 0) {\n        msg.color = 'red';\n    } else {\n        msg.color = 'green';\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6021178f133e98cf",
+        "type": "delay",
+        "z": "e7429ac6990a1dad",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "964a78f7609564fd"
+            ]
+        ]
+    },
+    {
+        "id": "75af7ddeb47f68da",
+        "type": "mqtt in",
+        "z": "debde317875b9fac",
+        "name": "Bucket State 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "a5fbd924d4701346"
+            ]
+        ]
+    },
+    {
+        "id": "a5fbd924d4701346",
+        "type": "subflow:d2262f700e8b5c77",
+        "z": "debde317875b9fac",
+        "name": "",
+        "x": 400,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a435d0f57439d369",
+        "type": "mqtt in",
+        "z": "debde317875b9fac",
+        "name": "Bucket State 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "9d68f990b89ed849"
+            ]
+        ]
+    },
+    {
+        "id": "9d68f990b89ed849",
+        "type": "subflow:d2262f700e8b5c77",
+        "z": "debde317875b9fac",
+        "x": 400,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4d5051646cfb91b",
+        "type": "mqtt in",
+        "z": "debde317875b9fac",
+        "name": "Bucket State 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "14b9c3f2b6b2fa78"
+            ]
+        ]
+    },
+    {
+        "id": "14b9c3f2b6b2fa78",
+        "type": "subflow:d2262f700e8b5c77",
+        "z": "debde317875b9fac",
+        "x": 400,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "057b4ed6b566bbde",
+        "type": "mqtt in",
+        "z": "debde317875b9fac",
+        "name": "Bucket State 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "fd28849d145936d9"
+            ]
+        ]
+    },
+    {
+        "id": "fd28849d145936d9",
+        "type": "subflow:d2262f700e8b5c77",
+        "z": "debde317875b9fac",
+        "x": 400,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48a2efbd2b111ad4",
+        "type": "mqtt in",
+        "z": "f7af327ab49dcd5b",
+        "name": "System Events 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "fdcb4a0c853d5f7a"
+            ]
+        ]
+    },
+    {
+        "id": "fdcb4a0c853d5f7a",
+        "type": "subflow:a8ba1a8e7c72d5f7",
+        "z": "f7af327ab49dcd5b",
+        "name": "",
+        "x": 470,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4d7a6da899ab016",
+        "type": "mqtt in",
+        "z": "f7af327ab49dcd5b",
+        "name": "System Events 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "b55d3f686b492272"
+            ]
+        ]
+    },
+    {
+        "id": "b55d3f686b492272",
+        "type": "subflow:a8ba1a8e7c72d5f7",
+        "z": "f7af327ab49dcd5b",
+        "x": 470,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "395a262bb46dd775",
+        "type": "mqtt in",
+        "z": "f7af327ab49dcd5b",
+        "name": "System Events 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 360,
+        "wires": [
+            [
+                "6d1150690d61bc86"
+            ]
+        ]
+    },
+    {
+        "id": "6d1150690d61bc86",
+        "type": "subflow:a8ba1a8e7c72d5f7",
+        "z": "f7af327ab49dcd5b",
+        "x": 470,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ebe2237c44c832cd",
+        "type": "mqtt in",
+        "z": "f7af327ab49dcd5b",
+        "name": "System Events 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 500,
+        "wires": [
+            [
+                "b1f8ed47d3ba8bcc"
+            ]
+        ]
+    },
+    {
+        "id": "b1f8ed47d3ba8bcc",
+        "type": "subflow:a8ba1a8e7c72d5f7",
+        "z": "f7af327ab49dcd5b",
+        "x": 470,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78861de4f42d8720",
+        "type": "mqtt in",
+        "z": "f7af327ab49dcd5b",
+        "name": "Bucket State 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "fdcb4a0c853d5f7a"
+            ]
+        ]
+    },
+    {
+        "id": "a35798a75a1f95c6",
+        "type": "mqtt in",
+        "z": "f7af327ab49dcd5b",
+        "name": "Bucket State 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "b55d3f686b492272"
+            ]
+        ]
+    },
+    {
+        "id": "0f9375cb6b068179",
+        "type": "mqtt in",
+        "z": "f7af327ab49dcd5b",
+        "name": "Bucket State 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 420,
+        "wires": [
+            [
+                "6d1150690d61bc86"
+            ]
+        ]
+    },
+    {
+        "id": "55430bfc1cbbd98b",
+        "type": "mqtt in",
+        "z": "f7af327ab49dcd5b",
+        "name": "Bucket State 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 560,
+        "wires": [
+            [
+                "b1f8ed47d3ba8bcc"
+            ]
+        ]
+    },
+    {
+        "id": "c2b289dcb62f51cc",
+        "type": "mqtt in",
+        "z": "2976b3f8c60c3097",
+        "name": "Tracking 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/tracking",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [
+                "3b5b1be4e95927ac"
+            ]
+        ]
+    },
+    {
+        "id": "3b5b1be4e95927ac",
+        "type": "subflow:d83bfe0b60ca7ed5",
+        "z": "2976b3f8c60c3097",
+        "name": "",
+        "x": 400,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9b3187a026ede1a",
+        "type": "mqtt in",
+        "z": "2976b3f8c60c3097",
+        "name": "Tracking 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/tracking",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "4184a6dce6e2ccaf"
+            ]
+        ]
+    },
+    {
+        "id": "4184a6dce6e2ccaf",
+        "type": "subflow:d83bfe0b60ca7ed5",
+        "z": "2976b3f8c60c3097",
+        "name": "",
+        "x": 400,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "56123f12697bd859",
+        "type": "mqtt in",
+        "z": "2976b3f8c60c3097",
+        "name": "Tracking 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/tracking",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "1aba9f0f906c3f7b"
+            ]
+        ]
+    },
+    {
+        "id": "1aba9f0f906c3f7b",
+        "type": "subflow:d83bfe0b60ca7ed5",
+        "z": "2976b3f8c60c3097",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d36204fa5cb60a1",
+        "type": "mqtt in",
+        "z": "2976b3f8c60c3097",
+        "name": "Tracking 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/tracking",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "4782add81d8d3fcd"
+            ]
+        ]
+    },
+    {
+        "id": "4782add81d8d3fcd",
+        "type": "subflow:d83bfe0b60ca7ed5",
+        "z": "2976b3f8c60c3097",
+        "name": "",
+        "x": 400,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d28ab8e116887c58",
+        "type": "mqtt in",
+        "z": "fc1b005081474eee",
+        "name": "Andon Events 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/andonevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "55989568d7d95b7c"
+            ]
+        ]
+    },
+    {
+        "id": "55989568d7d95b7c",
+        "type": "subflow:11c63ab4c05be4fa",
+        "z": "fc1b005081474eee",
+        "name": "",
+        "x": 440,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1fca6478441d15bf",
+        "type": "inject",
+        "z": "fc1b005081474eee",
+        "name": "Break 1 Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "30 07 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 340,
+        "wires": [
+            [
+                "2248a23613feebe4"
+            ]
+        ]
+    },
+    {
+        "id": "e9e138f8a1a641a4",
+        "type": "inject",
+        "z": "fc1b005081474eee",
+        "name": "Break 1 End",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "40 07 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 380,
+        "wires": [
+            [
+                "2248a23613feebe4"
+            ]
+        ]
+    },
+    {
+        "id": "8077dd634a0f8a0b",
+        "type": "inject",
+        "z": "fc1b005081474eee",
+        "name": "Lunch Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 10 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 420,
+        "wires": [
+            [
+                "2248a23613feebe4"
+            ]
+        ]
+    },
+    {
+        "id": "e12806ceb6c031d4",
+        "type": "inject",
+        "z": "fc1b005081474eee",
+        "name": "Lunch End",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "30 10 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 460,
+        "wires": [
+            [
+                "2248a23613feebe4"
+            ]
+        ]
+    },
+    {
+        "id": "b7a0aee47a1447ad",
+        "type": "inject",
+        "z": "fc1b005081474eee",
+        "name": "Break 2 Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 13 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 500,
+        "wires": [
+            [
+                "2248a23613feebe4"
+            ]
+        ]
+    },
+    {
+        "id": "96d132747725cd32",
+        "type": "inject",
+        "z": "fc1b005081474eee",
+        "name": "Break 2 End",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "10 13 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 540,
+        "wires": [
+            [
+                "2248a23613feebe4"
+            ]
+        ]
+    },
+    {
+        "id": "2248a23613feebe4",
+        "type": "function",
+        "z": "fc1b005081474eee",
+        "name": "Set break status",
+        "func": "let breakStatus = global.get('breakStatus') || false;\nmsg.topic = 'Break Notification';\n\nif (!breakStatus) {\n    breakStatus = true;\n    msg.payload = 'Break has started';\n} else {\n    breakStatus = false;\n    msg.payload = 'Break has ended';\n}\n\nglobal.set('breakStatus', breakStatus);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 460,
+        "wires": [
+            [
+                "62d15003bbf33306"
+            ]
+        ]
+    },
+    {
+        "id": "cd92cbc140b0d2c7",
+        "type": "inject",
+        "z": "fc1b005081474eee",
+        "name": "Shift End",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "30 14 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 580,
+        "wires": [
+            [
+                "2248a23613feebe4"
+            ]
+        ]
+    },
+    {
+        "id": "62d15003bbf33306",
+        "type": "ui_toast",
+        "z": "fc1b005081474eee",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Show notification",
+        "x": 670,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3fc02a80b2a88cc5",
+        "type": "mqtt in",
+        "z": "fc1b005081474eee",
+        "name": "Andon Events 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/andonevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "f2396e789fb522c6"
+            ]
+        ]
+    },
+    {
+        "id": "f2396e789fb522c6",
+        "type": "subflow:11c63ab4c05be4fa",
+        "z": "fc1b005081474eee",
+        "name": "",
+        "x": 440,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8048b199a4d8d9da",
+        "type": "mqtt in",
+        "z": "fc1b005081474eee",
+        "name": "Andon Events 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/andonevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "36cd724aea23631f"
+            ]
+        ]
+    },
+    {
+        "id": "36cd724aea23631f",
+        "type": "subflow:11c63ab4c05be4fa",
+        "z": "fc1b005081474eee",
+        "name": "",
+        "x": 440,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "458eb8ec3ec8b0d5",
+        "type": "mqtt in",
+        "z": "fc1b005081474eee",
+        "name": "Andon Events 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/andonevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "c15ef14638a55d5f"
+            ]
+        ]
+    },
+    {
+        "id": "c15ef14638a55d5f",
+        "type": "subflow:11c63ab4c05be4fa",
+        "z": "fc1b005081474eee",
+        "name": "",
+        "x": 440,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a41b159493ce734",
+        "type": "mqtt in",
+        "z": "176db046acf24cae",
+        "name": "Likely",
+        "topic": "pinpointdatamanager/razorline/razorstn1/production/likely",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "02a52a2df456fe8a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 40,
+        "wires": [
+            [
+                "ac35336eab32752c"
+            ]
+        ]
+    },
+    {
+        "id": "215286f51bdf59ba",
+        "type": "mqtt in",
+        "z": "176db046acf24cae",
+        "name": "Production",
+        "topic": "pinpointdatamanager/razorline/razorstn1/production",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "02a52a2df456fe8a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 120,
+        "wires": [
+            [
+                "ac35336eab32752c"
+            ]
+        ]
+    },
+    {
+        "id": "ac35336eab32752c",
+        "type": "subflow:2741324d972f5831",
+        "z": "176db046acf24cae",
+        "name": "",
+        "x": 420,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24eab168f054b7ad",
+        "type": "inject",
+        "z": "176db046acf24cae",
+        "name": "Run Every Day 3:00am",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 03 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "45a3ebc20acc2027"
+            ]
+        ]
+    },
+    {
+        "id": "45a3ebc20acc2027",
+        "type": "subflow:5d5cc90da6f3048d",
+        "z": "176db046acf24cae",
+        "name": "",
+        "x": 540,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0ecaa98e43b21e45",
+        "type": "mqtt in",
+        "z": "722fb55c0b4e180b",
+        "name": "Bucket State 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "d2a083b45c4bba29"
+            ]
+        ]
+    },
+    {
+        "id": "0c96cbf0c928bfa8",
+        "type": "ui_template",
+        "z": "722fb55c0b4e180b",
+        "group": "8bd8cbf3c40f1f99",
+        "name": "(S) Display Bucket State",
+        "order": 3,
+        "width": 9,
+        "height": 4,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 850,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d586c84bf403feb6",
+        "type": "ui_template",
+        "z": "722fb55c0b4e180b",
+        "group": "0373f32ace576561",
+        "name": "CSS",
+        "order": 5,
+        "width": 10,
+        "height": 1,
+        "format": "<style>\n    :root {\n\t--primary-bg-color: rgba(255, 255, 255, 0.85);\n    --secondary-bg-color: rgba(255, 255, 255, 0);\n    --station-color: #8500c2;\n    --border-radius: 10px;\n\t--default-margin: 10px;\n    --font-size-large: 62px;\n    --font-size-medium: 40px;\n    --font-weight-bold: bold;\n    /* Add more as needed */\n\t}\n\t\n\tbody {\n        background-image: url(\"https://i.ibb.co/XkQss2f/dashboard-background-dx.jpg\");\n        background-repeat: no-repeat;\n        background-size: cover;\n        font-family: Arial, sans-serif !important;\n    }\n\n    .nr-dashboard-cardtitle /* Default header on each panel (only 'Extra Information' tab uses these right now) */ {\n        font-size: var(--font-size-large) !important;\n        font-weight: var(--font-weight-bold) !important;\n        text-align: center;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        padding-top: 40px;\n    } \n\n    ui-card-panel /* Background of each panel on the dashboard */ {\n        border: 6px solid var(--secondary-bg-color) !important;\n        border-radius: 30px;\n        background-color: var(--primary-bg-color) !important;\n        padding: 0px !important;\n        margin-right: var(--border-radius) !important;\n    }\n\n    .nr-dashboard-template /* Background of each sub-panel on the dashboard */ {\n        background-color: var(--secondary-bg-color) !important;\n        border-radius: 20px;\n        border: 1px solid rgba(128, 128, 128, 0) !important;\n        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0);\n        transform: scale(1) !important;\n    }\n\n    /*################################# Chart styling #################################*/\n\n    ._md.layout-align-center-center.visible /* Chart background (e.g. Working Time vs. Overcycle Time)  */ {\n        background-color: var(--secondary-bg-color) !important;\n        border-radius: var(--border-radius);\n        border: 1px solid rgba(128, 128, 128, 0) !important;\n        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0);\n    }\n\n    .label.nr-dashboard-gauge-title.nr-dashboard-gauge-titlel /* Title of gauge on 'Single Station (Old Design)' tab */ {\n        font-size: 24px !important;\n        font-weight: var(--font-weight-bold) !important;\n    }\n\n    .label.nr-dashboard-chart-title.nr-dashboard-chart-titlel /* Title of charts (e.g. Working Time vs. Overcycle Time) */ {\n        font-size: var(--font-size-medium);\n        font-weight: var(--font-weight-bold);\n    }\n\n    html {\n        zoom: 48%;\n    }\n\n    .md-toolbar-tools /* Top bar containing \"PINpoint | IoT Dashboard\" */ {\n        font-size: 40px !important;\n        font-weight: 500;\n        padding: 46px !important;\n    }\n\n    /*################################# Header & image styling for single station view #################################*/\n\n    .header {\n        display: grid;\n        grid-template-columns: 205px calc(98% - 400px) 195px; /* Adjusts column widths */\n        grid-template-rows: 100px;\n        grid-gap: var(--default-margin); /* Space between grid items */\n        text-align: center; /* Centers text in grid items */\n        padding: 0px; /* Padding around the grid */\n        margin-bottom: 0px;\n    }\n\n    .equal {\n        grid-template-columns: repeat(3, 1fr);\n        grid-template-rows: 60px;\n    }\n    \n    .header > div {\n        border: 0px solid #ccc; \n        padding: 0px; /* Padding within grid items */\n        font-size: var(--font-size-medium); /* Font size in grid items */\n        font-weight: var(--font-weight-bold);\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: center;\n    }\n\n    .headerImage {\n        max-width: 70px;\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: center;\n    }\n\n    .headerStation {\n        color: var(--station-color);\n        font-size: 70px !important;\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: center;\n        height: 100%;\n    }\n\n    .headerStation > div {\n        width: 100%;\n        text-align: center;\n    }\n\n    .text-container {\n        text-align: center;\n        margin-top: var(--default-margin);\n        font-size: var(--font-size-medium);\n        font-weight: var(--font-weight-bold);\n        margin-bottom: auto;\n    }\n    \n    .container {\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-start;\n        align-items: center;\n    }\n    \n    .image-container {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center;\n        margin-top: 30px;\n        margin-bottom: 40px;\n        height: 100%;\n    }\n    \n    .image-container img {\n        max-width: 200px;\n        max-height: 100%;\n    }\n\n    .not-in-use {\n        color: #707b90;\n        font-size: 70px !important;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        height: 100%;\n        margin-top: 30px;\n        font-style: italic;\n    }\n\n    /*################################# Header & image styling for multistation view #################################*/\n\n    .headerMulti {\n        display: grid;\n        grid-template-columns: 95px calc(96% - 180px) 90px; /* Adjusts column widths */\n        grid-template-rows: 100px;\n        grid-gap: var(--default-margin); /* Space between grid items */\n        text-align: center; /* Centers text in grid items */\n        padding: 0px; /* Padding around the grid */\n        margin-bottom: 0px;\n    }\n        \n    .equalMulti {\n        grid-template-columns: repeat(3, 1fr);\n        grid-template-rows: 60px;\n    }\n\n    .headerMulti > div {\n        border: 0px solid #ccc; /* Border around grid items */\n        padding: 0px; /* Padding within grid items */\n        font-size: 30px; /* Font size in grid items */\n        font-weight: var(--font-weight-bold);\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: center;\n    }\n        \n    .headerImageMulti {\n        max-width: 60px;\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: center;\n    }\n        \n    .headerStationMulti {\n        color: var(--station-color);\n        font-size: 60px !important;\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: center;\n        height: 100%;\n    }\n        \n    .headerStationMulti > div {\n        width: 100%;\n        text-align: center;\n    }\n    \n    .image-containerMulti {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center;\n        margin-top: 30px;\n        height: 100%;\n    }\n\n    .image-containerMulti img {\n        max-width: 150px;\n        max-height: 100%;\n    }\n    \n    .text-containerMulti {\n        text-align: center;\n        margin-top: var(--default-margin);\n        font-size: 30px;\n        font-weight: var(--font-weight-bold);\n        margin-bottom: auto;\n    }\n    \n    .containerMulti {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: flex-start;\n    }\n\n    .red {\n        color: red;\n    }\n    \n    .darkorange {\n        color: darkorange;\n    }\n    \n    .darkerorange {\n        color: #FF6600;\n    }\n    \n    .green {\n        color: green;\n    }\n    \n    .bold-text {\n        font-weight: var(--font-weight-bold);\n        text-align: center;\n    }\n    \n    .status-imageMulti {\n        width: 200px;\n        height: auto;\n    }\n\n    .not-in-use-multi {\n        color: #707b90;\n        font-size: 60px !important;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        height: 100%;\n        margin-top: 30px;\n        font-style: italic;\n    }\n\n\n    /*################################# Custom scroll bar design #################################*/\n\n    /* This is for webkit browsers like Chrome and Safari */\n    ::-webkit-scrollbar {\n        width: 12px;\n    /* Width of the vertical scrollbar */\n        height: 12px;\n    /* Height of the horizontal scrollbar */\n    }\n    \n    /* Handle */\n    ::-webkit-scrollbar-thumb {\n        background: #888;\n    /* Color of the scroll thumb */\n        border-radius: var(--border-radius);\n    /* Rounded corners on the scroll thumb */\n    }\n    \n    /* Handle on hover */\n    ::-webkit-scrollbar-thumb:hover {\n        background: #555;\n    /* Color of the scroll thumb on hover */\n    }\n\n    /*################################# Custom dashboard menu & title bar styles #################################*/\n\n    .md-sidenav-left._md { /* Side menu styles */\n        background-color: rgba(218, 220, 211, 1);\n        width: 400px !important;\n        max-width: 500px !important;\n    }\n\n    .md-button { /* Buttons on the side menu */\n        font-size: 36px !important;\n    }\n\n    .md-button.md-icon-button { /* Menu button */\n        height: 90px !important;\n        width: 90px !important;\n    }\n\n    ng-md-icon { /* Menu button icon */\n        height: 58px !important;\n        width: 74px !important;\n        display: flex !important;\n    }\n\n    svg { \n        height: 54px !important;\n        width: 50px !important;\n    }\n\n    .md-sidenav-left, md-sidenav { /* Controls height of the side menu */\n        top: 92px !important;\n    }\n    \n    \n    /* The class below is from selecting a tab on the left side bar */\n\n    /* button.md-no-style.md-button.md-ink-ripple[aria-label=\"Station 1\"] {\n        background: url('https://i.ibb.co/C548Yg0/8010A.png') no-repeat center center;\n        background-size: 65%;\n        font-family: 'none';\n    }\n\n    button.md-no-style.md-button.md-ink-ripple[aria-label=\"Station 2\"] {\n        background: url('https://i.ibb.co/3kn2S0d/8010B.png') no-repeat center center;\n        background-size: 65%;\n        font-family: 'none';\n    }\n\n    button.md-no-style.md-button.md-ink-ripple[aria-label=\"Station 3\"] {\n        background: url('https://i.ibb.co/V3HbNJv/8011.png') no-repeat center center;\n        background-size: 65%;\n        font-family: 'none';\n    }\n\n    button.md-no-style.md-button.md-ink-ripple[aria-label=\"Station 4\"] {\n        background: url('https://i.ibb.co/QXwt6b8/8012.png') no-repeat center center;\n        background-size: 65%;\n        font-family: 'none';\n    } */\n\n\n    /*################################# Plant Manager View #################################*/\n    .plant-manager-header {\n        text-align: center;\n    }\n\n    .main-header {\n        text-align: center; \n        background-color: var(--secondary-bg-color) !important; \n        font-size: 90px;\n        font-weight: var(--font-weight-bold);\n    }\n\n    .sub-header {\n        text-align: center;\n        background-color: var(--secondary-bg-color) !important;\n        font-size: var(--font-size-medium);\n        font-weight: var(--font-weight-bold);\n    }\n\n    .nr-dashboard-dropdown {\n        background-color: var(--secondary-bg-color) !important;\n    }\n\n    .md-text {\n        font-size: var(--font-size-medium) !important;\n        font-weight: var(--font-weight-bold) !important;\n        text-align: center !important;\n    }\n\n    .md-ripple-container {\n        background-color: var(--secondary-bg-color) !important;\n    }\n\n    /*################################# Cycle Time Animations #################################*/\n\n    @keyframes warning {\n        0% { background-color: rgba(255, 165, 0, 1); }\n        50% { background-color: transparent; }\n        100% { background-color: rgba(255, 165, 0, 1); }\n    }\n\n    @keyframes overcycle {\n        0% { background-color: rgba(255, 105, 97, 1); }\n        50% { background-color: transparent; }\n        100% { background-color: rgba(255, 105, 97, 1); }\n    }\n\n    .paused {\n        background-color: rgba(152, 251, 152, 1); /* pastel green */\n        width: 100%;\n        border-radius: 30px;\n    }\n\n    .warning, .overcycle {\n        width: 100%; /* make the div containing the animation full width */\n        border-radius: 30px; /* set the border radius */\n        animation: 2s infinite;\n    }\n\n    .warning {\n        animation-name: warning;\n    }\n\n    .overcycle {\n        animation-name: overcycle;\n    }\n\n    .normal {\n        background-color: transparent;\n    }\n\n    /*################################# GPA Widget Styles #################################*/\n\n    .gpa-div {\n        display: flex;\n        align-items: center;\n        height: 100vh;\n    }\n\n    .gpa-table {\n        margin: auto;\n        text-align: center;\n        width: 100%;\n        border-collapse: collapse;\n    }\n\n    .gpa-table-cells {\n        width: 25%;\n        font-size: var(--font-size-medium);\n    }\n    \n    /*################################# Cycle Time Styles #################################*/\n\n    .cycle-time-div-outer {\n        text-align: center;\n    }\n\n    .cycle-time-hr {\n        border: none;\n        border-top: 1px solid #959c99;\n        width: 95%;\n        margin-bottom: 12px;\n    }\n\n    .cycle-time-div-inner {\n        display: flex;\n        justify-content: center;\n        width: 100%;\n    }\n\n    .cycle-time-div-content {\n        font-weight: var(--font-weight-bold);\n        font-size: 100px;\n        color: black;\n    }\n\n    /*################################# Single Station NVA/OC Timers #################################*/\n\n\t/* same as text-container but with 0px margin top */\n    .extra-timer-div-inner {\n        text-align: center;\n        margin-top: 0px;\n        font-size: var(--font-size-medium);\n        font-weight: var(--font-weight-bold);\n        margin-bottom: auto;\n    }\n\t\n\t.extra-timer-span-label {\n\t\tfont-weight: var(--font-weight-bold);\n\t}\n\t\n\t.extra-timer-div-content {\n\t\tmargin-top: 0px;\n\t}\n\t\n\t/* Span class is not needed since it uses same styles as cycle time timers! */\n\n    /*################################# Andon Table Styles #################################*/\n\t\n\t.andon-table {\n\t\ttext-align: left;\n\t\twidth: 100%;\n\t\tborder-collapse: separate;\n\t\tborder-spacing: 0 var(--default-margin);\n\t}\n\t\n\t.andon-table-station-cell {\n\t\tborder-top-left-radius: var(--border-radius);\n\t\tborder-bottom-left-radius: var(--border-radius);\n\t\twidth: 25%;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t}\n\t\t\n\t.andon-table-andon-cell {\n\t\twidth: 25%;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t}\n\t\t\n\t.andon-table-description-cell {\n\t\twidth: 30%;\n\t\tpadding-left: 0px;\n\t\ttext-align: left;\n\t\twhite-space: normal;\n\t}\n\t\t\n\t.andon-table-duration-cell {\n\t\tborder-top-right-radius: var(--border-radius);\n\t\tborder-bottom-right-radius: var(--border-radius);\n\t\twidth: 20%;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\ttext-align: right;\n\t}\n\t\n\t.andon-table-div-outer {\n\t\ttext-align: center;\n\t}\n\t\n\t.andon-table-header {\n\t\ttext-align: center;\n\t\tpadding-bottom: 5px !important;\n\t\tmargin-bottom: 0 !important;\n\t\tfont-size: var(--font-size-medium);\n\t}\n\t\n\t.andon-table-div-content {\n\t\ttext-align: left;\n\t\tfont-size: 30px;\n\t\tfont-weight: var(--font-weight-bold);\n\t\tmargin-top: 0 !important;\n\t}\n\n    /*################################# Station Widget Styles #################################*/\n\n    .bucket-state-hr {\n        border: none;\n        border-top: 1px solid #959c99;\n        width: 90%;\n        margin-bottom: 12px;\n    }\n    \n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2a083b45c4bba29",
+        "type": "subflow:9930c93a0d5e3d4c",
+        "z": "722fb55c0b4e180b",
+        "name": "",
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "0c96cbf0c928bfa8"
+            ],
+            [
+                "3b55c3805ca1b8c4"
+            ]
+        ]
+    },
+    {
+        "id": "aea34ded0febf851",
+        "type": "mqtt in",
+        "z": "722fb55c0b4e180b",
+        "name": "Bucket State 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "b0d304fa0ed1331b"
+            ]
+        ]
+    },
+    {
+        "id": "bb6444ff72f59a55",
+        "type": "ui_template",
+        "z": "722fb55c0b4e180b",
+        "group": "b114a68376e01b10",
+        "name": "(S) Display Bucket State",
+        "order": 3,
+        "width": 9,
+        "height": 4,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 850,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0d304fa0ed1331b",
+        "type": "subflow:9930c93a0d5e3d4c",
+        "z": "722fb55c0b4e180b",
+        "name": "",
+        "x": 480,
+        "y": 240,
+        "wires": [
+            [
+                "bb6444ff72f59a55"
+            ],
+            [
+                "0a41b30299f448e1"
+            ]
+        ]
+    },
+    {
+        "id": "9634b9c54dcb4163",
+        "type": "mqtt in",
+        "z": "722fb55c0b4e180b",
+        "name": "Bucket State 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 340,
+        "wires": [
+            [
+                "dbd7c6c9480ef36a"
+            ]
+        ]
+    },
+    {
+        "id": "0aa352234dc3b294",
+        "type": "ui_template",
+        "z": "722fb55c0b4e180b",
+        "group": "12ebaf6110cabd38",
+        "name": "(S) Display Bucket State",
+        "order": 3,
+        "width": 9,
+        "height": 4,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 850,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dbd7c6c9480ef36a",
+        "type": "subflow:9930c93a0d5e3d4c",
+        "z": "722fb55c0b4e180b",
+        "name": "",
+        "x": 480,
+        "y": 340,
+        "wires": [
+            [
+                "0aa352234dc3b294"
+            ],
+            [
+                "06a0ccbdac412e5e"
+            ]
+        ]
+    },
+    {
+        "id": "f545e6da53994842",
+        "type": "mqtt in",
+        "z": "722fb55c0b4e180b",
+        "name": "Bucket State 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 440,
+        "wires": [
+            [
+                "25fcf975056c3530"
+            ]
+        ]
+    },
+    {
+        "id": "bedde2e66fbbbe07",
+        "type": "ui_template",
+        "z": "722fb55c0b4e180b",
+        "group": "26c9438cdf6ae260",
+        "name": "(S) Display Bucket State",
+        "order": 3,
+        "width": 9,
+        "height": 4,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 850,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25fcf975056c3530",
+        "type": "subflow:9930c93a0d5e3d4c",
+        "z": "722fb55c0b4e180b",
+        "name": "",
+        "x": 480,
+        "y": 440,
+        "wires": [
+            [
+                "bedde2e66fbbbe07"
+            ],
+            [
+                "ed1e787b0045b970"
+            ]
+        ]
+    },
+    {
+        "id": "3b55c3805ca1b8c4",
+        "type": "ui_template",
+        "z": "722fb55c0b4e180b",
+        "group": "0373f32ace576561",
+        "name": "(M) Display Bucket State",
+        "order": 3,
+        "width": 5,
+        "height": 3,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 850,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a41b30299f448e1",
+        "type": "ui_template",
+        "z": "722fb55c0b4e180b",
+        "group": "951d70129c877b2e",
+        "name": "(M) Display Bucket State",
+        "order": 3,
+        "width": 5,
+        "height": 3,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 850,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "06a0ccbdac412e5e",
+        "type": "ui_template",
+        "z": "722fb55c0b4e180b",
+        "group": "fd17cfd0eda5af83",
+        "name": "(M) Display Bucket State",
+        "order": 3,
+        "width": 5,
+        "height": 3,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 850,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed1e787b0045b970",
+        "type": "ui_template",
+        "z": "722fb55c0b4e180b",
+        "group": "cd5ad1d0bf7f8611",
+        "name": "(M) Display Bucket State",
+        "order": 3,
+        "width": 5,
+        "height": 3,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 850,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3bc076bfbf4359ae",
+        "type": "ui_template",
+        "z": "722fb55c0b4e180b",
+        "group": "",
+        "name": "PINpoint Logo",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<script id=\"logoScript1\" type=\"text/javascript\">\n    $(function () {\n        // Check if the logo has already been added\n        var existingLogo = $('#customLogo');\n        if (existingLogo.length) {\n            return; // Logo already added, no need to add it again\n        }\n\n        // Create a new div for the logo and give it an ID\n        var div1 = $('<div id=\"customLogo\"/>').css({'margin-left': 'auto', 'margin-right': '0'});\n        var logo = new Image();\n        \n        // Set the logo source and other attributes\n        logo.src = 'data:image/png;base64,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'; // <-- Paste your base64 image string here\n        logo.height = 90;\n\n        // Append logo to the div\n        div1.append(logo);\n\n        // Function to add the logo to the toolbar when available\n        var addToToolbarTimer = setInterval(function() {\n            var toolbar = $('.md-toolbar-tools');\n            if (toolbar.length && !$('#customLogo').length) {\n                // The logo will be added to the right side of the title bar\n                toolbar.append(div1);\n                clearInterval(addToToolbarTimer);\n            }\n        }, 100);\n    });\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 280,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "99d1e773ead97630",
+        "type": "mqtt in",
+        "z": "2695f9f24cf7e4b0",
+        "name": "System Events 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [
+                "d311fcf0edc7b4bb"
+            ]
+        ]
+    },
+    {
+        "id": "697d5a93204b9e19",
+        "type": "ui_template",
+        "z": "2695f9f24cf7e4b0",
+        "group": "8bd8cbf3c40f1f99",
+        "name": "(S) Display Cycle Status",
+        "order": 4,
+        "width": 9,
+        "height": 4,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9855915eb138f72f",
+        "type": "mqtt in",
+        "z": "2695f9f24cf7e4b0",
+        "name": "Bucket State 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "d311fcf0edc7b4bb"
+            ]
+        ]
+    },
+    {
+        "id": "d311fcf0edc7b4bb",
+        "type": "subflow:2bd99a7d9fe65fb6",
+        "z": "2695f9f24cf7e4b0",
+        "name": "",
+        "x": 550,
+        "y": 80,
+        "wires": [
+            [
+                "697d5a93204b9e19"
+            ],
+            [
+                "bcd0b88c5e78b721"
+            ]
+        ]
+    },
+    {
+        "id": "d6974d5b746e6396",
+        "type": "mqtt in",
+        "z": "2695f9f24cf7e4b0",
+        "name": "System Events 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "e135c5208c226f1f"
+            ]
+        ]
+    },
+    {
+        "id": "a3c15e76fb0cfb41",
+        "type": "ui_template",
+        "z": "2695f9f24cf7e4b0",
+        "group": "b114a68376e01b10",
+        "name": "(S) Display Cycle Status",
+        "order": 4,
+        "width": 9,
+        "height": 4,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "644fc845e1c233dc",
+        "type": "mqtt in",
+        "z": "2695f9f24cf7e4b0",
+        "name": "Bucket State 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "e135c5208c226f1f"
+            ]
+        ]
+    },
+    {
+        "id": "e135c5208c226f1f",
+        "type": "subflow:2bd99a7d9fe65fb6",
+        "z": "2695f9f24cf7e4b0",
+        "x": 550,
+        "y": 220,
+        "wires": [
+            [
+                "a3c15e76fb0cfb41"
+            ],
+            [
+                "c0c77348e5d4e358"
+            ]
+        ]
+    },
+    {
+        "id": "c18e4435f7a77d71",
+        "type": "mqtt in",
+        "z": "2695f9f24cf7e4b0",
+        "name": "System Events 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 340,
+        "wires": [
+            [
+                "bb93c06f606964fa"
+            ]
+        ]
+    },
+    {
+        "id": "6c22d0ce9370f0c7",
+        "type": "ui_template",
+        "z": "2695f9f24cf7e4b0",
+        "group": "12ebaf6110cabd38",
+        "name": "(S) Display Cycle Status",
+        "order": 4,
+        "width": 9,
+        "height": 4,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "918520877f3c7a50",
+        "type": "mqtt in",
+        "z": "2695f9f24cf7e4b0",
+        "name": "Bucket State 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "bb93c06f606964fa"
+            ]
+        ]
+    },
+    {
+        "id": "bb93c06f606964fa",
+        "type": "subflow:2bd99a7d9fe65fb6",
+        "z": "2695f9f24cf7e4b0",
+        "x": 550,
+        "y": 360,
+        "wires": [
+            [
+                "6c22d0ce9370f0c7"
+            ],
+            [
+                "f8db25dc43c2aea8"
+            ]
+        ]
+    },
+    {
+        "id": "25f6e7ea7ba9380b",
+        "type": "mqtt in",
+        "z": "2695f9f24cf7e4b0",
+        "name": "System Events 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 480,
+        "wires": [
+            [
+                "2b94f0f4af91a6e0"
+            ]
+        ]
+    },
+    {
+        "id": "1a654d854ecb4528",
+        "type": "ui_template",
+        "z": "2695f9f24cf7e4b0",
+        "group": "26c9438cdf6ae260",
+        "name": "(S) Display Cycle Status",
+        "order": 4,
+        "width": 9,
+        "height": 4,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1fcb2f0cda3491e1",
+        "type": "mqtt in",
+        "z": "2695f9f24cf7e4b0",
+        "name": "Bucket State 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5ce2cab739c5a822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "2b94f0f4af91a6e0"
+            ]
+        ]
+    },
+    {
+        "id": "2b94f0f4af91a6e0",
+        "type": "subflow:2bd99a7d9fe65fb6",
+        "z": "2695f9f24cf7e4b0",
+        "name": "",
+        "x": 550,
+        "y": 500,
+        "wires": [
+            [
+                "1a654d854ecb4528"
+            ],
+            [
+                "c43ba1dbef9b0171"
+            ]
+        ]
+    },
+    {
+        "id": "bcd0b88c5e78b721",
+        "type": "ui_template",
+        "z": "2695f9f24cf7e4b0",
+        "group": "0373f32ace576561",
+        "name": "(M) Display Cycle Status",
+        "order": 4,
+        "width": 5,
+        "height": 3,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0c77348e5d4e358",
+        "type": "ui_template",
+        "z": "2695f9f24cf7e4b0",
+        "group": "951d70129c877b2e",
+        "name": "(M) Display Cycle Status",
+        "order": 4,
+        "width": 5,
+        "height": 3,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f8db25dc43c2aea8",
+        "type": "ui_template",
+        "z": "2695f9f24cf7e4b0",
+        "group": "fd17cfd0eda5af83",
+        "name": "(M) Display Cycle Status",
+        "order": 4,
+        "width": 5,
+        "height": 3,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c43ba1dbef9b0171",
+        "type": "ui_template",
+        "z": "2695f9f24cf7e4b0",
+        "group": "cd5ad1d0bf7f8611",
+        "name": "(M) Display Cycle Status",
+        "order": 4,
+        "width": 5,
+        "height": 3,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51d8c0c6ab65bc33",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "Tracking 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/tracking",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "90482e60e59dc930"
+            ]
+        ]
+    },
+    {
+        "id": "6781930db5d435d3",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "System Events 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/systemevents",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "90482e60e59dc930"
+            ]
+        ]
+    },
+    {
+        "id": "3ed510031875954b",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "Bucket State 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "90482e60e59dc930"
+            ]
+        ]
+    },
+    {
+        "id": "a24d4692022bf845",
+        "type": "ui_template",
+        "z": "5eedfd42acb6ab9d",
+        "group": "8bd8cbf3c40f1f99",
+        "name": "(S) Header",
+        "order": 1,
+        "width": 18,
+        "height": 2,
+        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90482e60e59dc930",
+        "type": "subflow:7e09aa9c425ed0e5",
+        "z": "5eedfd42acb6ab9d",
+        "name": "",
+        "x": 500,
+        "y": 100,
+        "wires": [
+            [
+                "a24d4692022bf845"
+            ],
+            [
+                "badad85af505b44c"
+            ]
+        ]
+    },
+    {
+        "id": "547676ca6f77aae0",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "Tracking 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/tracking",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 240,
+        "wires": [
+            [
+                "818407ef266ec548"
+            ]
+        ]
+    },
+    {
+        "id": "32b3c2d9b5016e57",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "System Events 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/systemevents",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "818407ef266ec548"
+            ]
+        ]
+    },
+    {
+        "id": "0a46df5fc323259c",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "Bucket State 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 360,
+        "wires": [
+            [
+                "818407ef266ec548"
+            ]
+        ]
+    },
+    {
+        "id": "f2a839e9b3df574a",
+        "type": "ui_template",
+        "z": "5eedfd42acb6ab9d",
+        "group": "b114a68376e01b10",
+        "name": "(S) Header",
+        "order": 1,
+        "width": 18,
+        "height": 2,
+        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "818407ef266ec548",
+        "type": "subflow:7e09aa9c425ed0e5",
+        "z": "5eedfd42acb6ab9d",
+        "name": "",
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "f2a839e9b3df574a"
+            ],
+            [
+                "3637c476c76730af"
+            ]
+        ]
+    },
+    {
+        "id": "3515e13d92eadb1e",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "Tracking 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/tracking",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 440,
+        "wires": [
+            [
+                "6f99df5a91716299"
+            ]
+        ]
+    },
+    {
+        "id": "863d6f349525f50e",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "System Events 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/systemevents",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 500,
+        "wires": [
+            [
+                "6f99df5a91716299"
+            ]
+        ]
+    },
+    {
+        "id": "0624f25eb201a597",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "Bucket State 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 560,
+        "wires": [
+            [
+                "6f99df5a91716299"
+            ]
+        ]
+    },
+    {
+        "id": "38d3265d3e92fe73",
+        "type": "ui_template",
+        "z": "5eedfd42acb6ab9d",
+        "group": "12ebaf6110cabd38",
+        "name": "(S) Header",
+        "order": 1,
+        "width": 18,
+        "height": 2,
+        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f99df5a91716299",
+        "type": "subflow:7e09aa9c425ed0e5",
+        "z": "5eedfd42acb6ab9d",
+        "name": "",
+        "x": 500,
+        "y": 500,
+        "wires": [
+            [
+                "38d3265d3e92fe73"
+            ],
+            [
+                "4eb1c9be1cef45d3"
+            ]
+        ]
+    },
+    {
+        "id": "1df4b69fdc4d7736",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "Tracking 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/tracking",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 640,
+        "wires": [
+            [
+                "a8dd251b22290fe2"
+            ]
+        ]
+    },
+    {
+        "id": "d1212ffe364f3f8e",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "System Events 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/systemevents",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 700,
+        "wires": [
+            [
+                "a8dd251b22290fe2"
+            ]
+        ]
+    },
+    {
+        "id": "b1ec7f47e1f35feb",
+        "type": "mqtt in",
+        "z": "5eedfd42acb6ab9d",
+        "name": "Bucket State 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/production/bucketstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 760,
+        "wires": [
+            [
+                "a8dd251b22290fe2"
+            ]
+        ]
+    },
+    {
+        "id": "faae071e9990076c",
+        "type": "ui_template",
+        "z": "5eedfd42acb6ab9d",
+        "group": "26c9438cdf6ae260",
+        "name": "(S) Header",
+        "order": 1,
+        "width": 18,
+        "height": 2,
+        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8dd251b22290fe2",
+        "type": "subflow:7e09aa9c425ed0e5",
+        "z": "5eedfd42acb6ab9d",
+        "name": "",
+        "x": 500,
+        "y": 700,
+        "wires": [
+            [
+                "faae071e9990076c"
+            ],
+            [
+                "f4fa79c901547d24"
+            ]
+        ]
+    },
+    {
+        "id": "badad85af505b44c",
+        "type": "ui_template",
+        "z": "5eedfd42acb6ab9d",
+        "group": "0373f32ace576561",
+        "name": "(M) Header",
+        "order": 1,
+        "width": 10,
+        "height": 2,
+        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use-multi\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3637c476c76730af",
+        "type": "ui_template",
+        "z": "5eedfd42acb6ab9d",
+        "group": "951d70129c877b2e",
+        "name": "(M) Header",
+        "order": 1,
+        "width": 10,
+        "height": 2,
+        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use-multi\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4eb1c9be1cef45d3",
+        "type": "ui_template",
+        "z": "5eedfd42acb6ab9d",
+        "group": "fd17cfd0eda5af83",
+        "name": "(M) Header",
+        "order": 1,
+        "width": 10,
+        "height": 2,
+        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use-multi\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4fa79c901547d24",
+        "type": "ui_template",
+        "z": "5eedfd42acb6ab9d",
+        "group": "cd5ad1d0bf7f8611",
+        "name": "(M) Header",
+        "order": 1,
+        "width": 10,
+        "height": 2,
+        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use-multi\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c36f1c4dc369b006",
+        "type": "inject",
+        "z": "79e4e521aa2f0425",
+        "name": "Run Every Second",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 380,
+        "wires": [
+            [
+                "b2af5d238fdd9d21"
+            ]
+        ]
+    },
+    {
+        "id": "b2af5d238fdd9d21",
+        "type": "subflow:0dc57d42f43e78f9",
+        "z": "79e4e521aa2f0425",
+        "name": "",
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "30790ead7318c664"
+            ]
+        ]
+    },
+    {
+        "id": "30790ead7318c664",
+        "type": "split",
+        "z": "79e4e521aa2f0425",
+        "name": "Split Station Names",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 750,
+        "y": 380,
+        "wires": [
+            [
+                "44ed4c3d960bb9b5"
+            ]
+        ]
+    },
+    {
+        "id": "44ed4c3d960bb9b5",
+        "type": "switch",
+        "z": "79e4e521aa2f0425",
+        "name": "ADD STATION NAMES HERE",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Razor_STN1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Razor_STN2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Razor_STN3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Razor_STN4",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 1070,
+        "y": 380,
+        "wires": [
+            [
+                "5d9970a20996c3c0"
+            ],
+            [
+                "b55aa9d6d93bcda3"
+            ],
+            [
+                "632b1dcf359ead99"
+            ],
+            [
+                "6a9d26c60f0ff690"
+            ]
+        ]
+    },
+    {
+        "id": "27f68d2a3a061495",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "8bd8cbf3c40f1f99",
+        "name": "(S) Cycle Time 1",
+        "order": 2,
+        "width": 18,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1940,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a310634a1f34fca6",
+        "type": "mqtt in",
+        "z": "79e4e521aa2f0425",
+        "name": "System Events 1",
+        "topic": "pinpointdatamanager/razorline/razorstn1/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "e8027e7cabb35c53"
+            ]
+        ]
+    },
+    {
+        "id": "04f0be6062322055",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "b114a68376e01b10",
+        "name": "(S) Cycle Time 2",
+        "order": 2,
+        "width": 18,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1940,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c9ed25d05981a3f",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "12ebaf6110cabd38",
+        "name": "(S) Cycle Time 3",
+        "order": 2,
+        "width": 18,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1940,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f98ee1a00088c072",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "26c9438cdf6ae260",
+        "name": "(S) Cycle Time 4",
+        "order": 2,
+        "width": 18,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1940,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fdeaa7e108e4bad5",
+        "type": "mqtt in",
+        "z": "79e4e521aa2f0425",
+        "name": "System Events 2",
+        "topic": "pinpointdatamanager/razorline/lkjweaf/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "d32c1ae5ad8d16da"
+            ]
+        ]
+    },
+    {
+        "id": "1fcecbbaa7c64e69",
+        "type": "mqtt in",
+        "z": "79e4e521aa2f0425",
+        "name": "System Events 3",
+        "topic": "pinpointdatamanager/razorline/eiii3/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "6bd26720206af5cd"
+            ]
+        ]
+    },
+    {
+        "id": "044c990406300e8a",
+        "type": "mqtt in",
+        "z": "79e4e521aa2f0425",
+        "name": "System Events 4",
+        "topic": "pinpointdatamanager/razorline/i3u4i32u/systemevents",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "67ccda4edcd4fa6c"
+            ]
+        ]
+    },
+    {
+        "id": "1509af0922efe4e1",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "8bd8cbf3c40f1f99",
+        "name": "(S) Overcycle Timer 1",
+        "order": 5,
+        "width": 9,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1960,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67c6cae1457d6ecf",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "8bd8cbf3c40f1f99",
+        "name": "(S) NVA Timer 1",
+        "order": 6,
+        "width": 9,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1940,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d9970a20996c3c0",
+        "type": "subflow:15111a9d6510dc85",
+        "z": "79e4e521aa2f0425",
+        "name": "",
+        "x": 1490,
+        "y": 160,
+        "wires": [
+            [
+                "67c6cae1457d6ecf"
+            ],
+            [
+                "1509af0922efe4e1"
+            ],
+            [
+                "27f68d2a3a061495",
+                "db78737b6f88887e"
+            ]
+        ]
+    },
+    {
+        "id": "b55aa9d6d93bcda3",
+        "type": "subflow:15111a9d6510dc85",
+        "z": "79e4e521aa2f0425",
+        "name": "",
+        "x": 1490,
+        "y": 320,
+        "wires": [
+            [
+                "9c36e1d4286aca9f"
+            ],
+            [
+                "3720ea36816d6802"
+            ],
+            [
+                "04f0be6062322055",
+                "ee4173360b6979c6"
+            ]
+        ]
+    },
+    {
+        "id": "632b1dcf359ead99",
+        "type": "subflow:15111a9d6510dc85",
+        "z": "79e4e521aa2f0425",
+        "name": "",
+        "x": 1490,
+        "y": 480,
+        "wires": [
+            [
+                "29d6533a2331a123"
+            ],
+            [
+                "077e219da948f7a5"
+            ],
+            [
+                "1c9ed25d05981a3f",
+                "d79a06e8bbaca705"
+            ]
+        ]
+    },
+    {
+        "id": "6a9d26c60f0ff690",
+        "type": "subflow:15111a9d6510dc85",
+        "z": "79e4e521aa2f0425",
+        "name": "",
+        "x": 1490,
+        "y": 640,
+        "wires": [
+            [
+                "ca5004995d4c0e6b"
+            ],
+            [
+                "093564f97b70cb20"
+            ],
+            [
+                "f98ee1a00088c072",
+                "9061f7c7919eccc0"
+            ]
+        ]
+    },
+    {
+        "id": "3720ea36816d6802",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "b114a68376e01b10",
+        "name": "(S) Overcycle Timer 2",
+        "order": 5,
+        "width": 9,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1960,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c36e1d4286aca9f",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "b114a68376e01b10",
+        "name": "(S) NVA Timer 2",
+        "order": 6,
+        "width": 9,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1940,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "077e219da948f7a5",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "12ebaf6110cabd38",
+        "name": "(S) Overcycle Timer 3",
+        "order": 5,
+        "width": 9,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1960,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29d6533a2331a123",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "12ebaf6110cabd38",
+        "name": "(S) NVA Timer 3",
+        "order": 6,
+        "width": 9,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1940,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "093564f97b70cb20",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "26c9438cdf6ae260",
+        "name": "(S) Overcycle Timer 4",
+        "order": 5,
+        "width": 9,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1960,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca5004995d4c0e6b",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "26c9438cdf6ae260",
+        "name": "(S) NVA Timer 4",
+        "order": 6,
+        "width": 9,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1940,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db78737b6f88887e",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "0373f32ace576561",
+        "name": "(M) Cycle Time 1",
+        "order": 2,
+        "width": 10,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1950,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee4173360b6979c6",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "951d70129c877b2e",
+        "name": "(M) Cycle Time 2",
+        "order": 2,
+        "width": 10,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1950,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d79a06e8bbaca705",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "fd17cfd0eda5af83",
+        "name": "(M) Cycle Time 3",
+        "order": 2,
+        "width": 10,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1950,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9061f7c7919eccc0",
+        "type": "ui_template",
+        "z": "79e4e521aa2f0425",
+        "group": "cd5ad1d0bf7f8611",
+        "name": "(M) Cycle Time 4",
+        "order": 2,
+        "width": 10,
+        "height": 2,
+        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1950,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8027e7cabb35c53",
+        "type": "subflow:b5bc4f93293404da",
+        "z": "79e4e521aa2f0425",
+        "name": "",
+        "x": 470,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d32c1ae5ad8d16da",
+        "type": "subflow:b5bc4f93293404da",
+        "z": "79e4e521aa2f0425",
+        "name": "",
+        "env": [
+            {
+                "name": "TAKT_TIME",
+                "value": "3:30",
+                "type": "str"
+            }
+        ],
+        "x": 470,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "6bd26720206af5cd",
+        "type": "subflow:b5bc4f93293404da",
+        "z": "79e4e521aa2f0425",
+        "name": "",
+        "x": 470,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "67ccda4edcd4fa6c",
+        "type": "subflow:b5bc4f93293404da",
+        "z": "79e4e521aa2f0425",
+        "name": "",
+        "x": 470,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0f7183c6bd36e72f",
+        "type": "inject",
+        "z": "357706603463b3d3",
+        "g": "d3f2735cedacab9d",
+        "name": "Repeat every second",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 180,
+        "y": 440,
+        "wires": [
+            [
+                "c017f39a63a070e1"
+            ]
+        ]
+    },
+    {
+        "id": "c017f39a63a070e1",
+        "type": "function",
+        "z": "357706603463b3d3",
+        "g": "d3f2735cedacab9d",
+        "name": "Formulate Table",
+        "func": "/**\n * Constructs an HTML table displaying the details of andon events for various stations from global context data.\n *\n * @description\n * This script iterates over keys in the global context that end with '_andons' to gather andon event data for each station.\n * It uses helper functions to format time from seconds to a \"minutes:seconds\" format and to generate HTML table rows for each relevant andon event.\n * The resulting HTML table is formatted with class styles for integration into web pages or dashboard displays, providing a clear visual representation of ongoing or resolved andon events.\n *\n * Helper Functions:\n * - `formatTime(seconds)`: Converts a raw duration in seconds to a formatted string \"m:ss\".\n * - `createTableRow(stationName, andonKey, andon)`: Generates a single HTML table row with station name, andon key, description, and duration.\n *\n * Processes:\n * - Filters keys from the global context to find those associated with andon data.\n * - For each valid andon, depending on its state (triggered or resolving), formats the display of time durations and compiles them into an HTML table.\n *\n * Outputs:\n * - `msg.payload`: A string containing an HTML table with rows representing the andon events for each station. The table is ready for display in HTML-supported views or dashboards.\n *\n * @returns {object} The message object containing the HTML string in its payload for further display or processing.\n */\n\n\n// Get the keys for objects ending with '_andons'\nlet stationKeys = global.keys().filter(key => key.endsWith('_andons'));\n\nlet output = '<table class=\"andon-table\">';\n\n// Helper function to convert seconds into a minutes:seconds format\nfunction formatTime(seconds) {\n    const minutes = Math.floor(seconds / 60);\n    const remainingSeconds = seconds % 60;\n    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;\n}\n\n// Helper function to generate a table row\nfunction createTableRow(stationName, andonKey, andon) {\n    // Construct duration based on whether andon is resolving or just triggered\n    let duration;\n    if (andon.resolving) {\n        duration = `${formatTime(andon.triggeredTimer)} [${formatTime(andon.resolvingTimer)}]`; // Show both timers\n    } else if (andon.triggered) {\n        duration = formatTime(andon.triggeredTimer); // Show only triggered timer\n    } else {\n        duration = 'Not Active'; // Optional: Handle cases where neither is true\n    }\n\n    return `\n        <tr>\n            <td class=\"andon-table-andon-cell\">${stationName}</td>\n            <td class=\"andon-table-andon-cell\">${andonKey}</td>\n            <td class=\"andon-table-description-cell\">${andon.andonDescription}</td>\n            <td class=\"andon-table-duration-cell\">${duration}</td>\n        </tr>\n    `;\n}\n\n// Iterate over each station key and its corresponding andons from global context\nstationKeys.forEach(stationKey => {\n    const andons = global.get(stationKey); // Retrieve each station's andons object from global context\n    Object.entries(andons).forEach(([andonKey, andon]) => {\n        if (andonKey !== 'totals' && (andon.triggered || andon.resolving)) { // Skip 'totals' and check trigger/resolving\n            const stationName = stationKey.replace('_andons', ''); // Extract station name from key\n            output += createTableRow(stationName, andonKey, andon);\n        }\n    });\n});\noutput += \"</table>\";\nmsg.payload = output;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 440,
+        "wires": [
+            [
+                "8b6565ca5f063b57"
+            ]
+        ]
+    },
+    {
+        "id": "8b6565ca5f063b57",
+        "type": "ui_template",
+        "z": "357706603463b3d3",
+        "g": "d3f2735cedacab9d",
+        "group": "eb66bc0c77b54613",
+        "name": "Output Active Events",
+        "order": 1,
+        "width": 20,
+        "height": 5,
+        "format": "<div style=\"text-align: center;\">\n    <h2 class=\"andon-table-header\" style=\"background-color: var(--secondary-bg-color) !important;\">Active Andon Events</h2>\n    <div class=\"andon-table-div-content\"\n        ng-bind-html=\"msg.payload | trusted\">\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 700,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d2adf994431ba55",
+        "type": "subflow:ca08316f41e559a5",
+        "z": "357706603463b3d3",
+        "g": "f5d9a3bec530f5d4",
+        "name": "",
+        "x": 500,
+        "y": 60,
+        "wires": [
+            [
+                "3cd2333a9d8a6365"
+            ]
+        ]
+    },
+    {
+        "id": "735752284f8715b4",
+        "type": "inject",
+        "z": "357706603463b3d3",
+        "g": "f5d9a3bec530f5d4",
+        "name": "Run Every Minute",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "7d2adf994431ba55"
+            ]
+        ]
+    },
+    {
+        "id": "3cd2333a9d8a6365",
+        "type": "ui_chart",
+        "z": "357706603463b3d3",
+        "g": "f5d9a3bec530f5d4",
+        "name": "Working Time vs. Overcycle Time",
+        "group": "6d430187a4e8a62f",
+        "order": 1,
+        "width": 20,
+        "height": 7,
+        "label": "Working Time vs. Overcycle Time",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 860,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0236d5831a895083",
+        "type": "mqtt in",
+        "z": "357706603463b3d3",
+        "g": "e0dec88326b7bedf",
+        "name": "Likely",
+        "topic": "pinpointdatamanager/razorline/razorstn1/production/likely",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "267461a9ab492e36"
+            ]
+        ]
+    },
+    {
+        "id": "d5ce46a2c15a5ae5",
+        "type": "mqtt in",
+        "z": "357706603463b3d3",
+        "g": "e0dec88326b7bedf",
+        "name": "Production",
+        "topic": "pinpointdatamanager/razorline/razorstn1/production",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d47490cf09efe9bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "267461a9ab492e36"
+            ]
+        ]
+    },
+    {
+        "id": "5b03d6c16f2aa603",
+        "type": "ui_template",
+        "z": "357706603463b3d3",
+        "g": "e0dec88326b7bedf",
+        "group": "b8f9571ba0acd9d2",
+        "name": "GPA",
+        "order": 1,
+        "width": 20,
+        "height": 2,
+        "format": "<div class=\"gpa-div\">\n    <table class=\"gpa-table\">\n        <tr>\n            <th class=\"gpa-table-cells\">Goal</th>\n            <th class=\"gpa-table-cells\">Planned</th>\n            <th class=\"gpa-table-cells\">Actual</th>\n            <th class=\"gpa-table-cells\">Difference</th>\n        </tr>\n        <tr>\n            <td class=\"gpa-table-cells\">{{msg.payload.goal}}</td>\n            <td class=\"gpa-table-cells\">{{msg.payload.planned}}</td>\n            <td class=\"gpa-table-cells\">{{msg.payload.actual}}</td>\n            <td class=\"gpa-table-cells\" style=\"color: {{msg.color}};\">{{msg.payload.difference}}</td>\n        </tr>\n    </table>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "359a20b6512d20f8",
+        "type": "function",
+        "z": "357706603463b3d3",
+        "g": "f5d9a3bec530f5d4",
+        "name": "Modify Chart Styling",
+        "func": "// The bar graph node uses 'chart.js' options\n\nmsg.ui_control = {\n    options: {\n        responsive: true,\n        maintainAspectRatio: false, // Set this to true to maintain aspect ratio\n        scales: {\n            xAxes: [{\n                ticks: {\n                    fontSize: 25, // Size of the font\n                    fontColor: 'black'\n                }\n            }],\n            yAxes: [{\n                ticks: {\n                    fontSize: 19, // Size of the font\n                    fontColor: 'black',\n                    padding: 10, // Additional padding to prevent cutting off\n                    // Create a custom callback to format the tick labels.\n                    callback: function(value) {\n                        // Use Math.round to round the value to the nearest whole number.\n                        return Math.round(value);\n                    }\n                }\n            }]\n        },\n        legend: {\n            display: true, // Ensure the legend is displayed\n            labels: {\n                fontSize: 20, // Set the legend font size\n                fontColor: 'black' // Set the legend font color\n            }\n        }\n    }\n};\ndelete msg.payload;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 120,
+        "wires": [
+            [
+                "3cd2333a9d8a6365"
+            ]
+        ]
+    },
+    {
+        "id": "10e3bd70d9c0f822",
+        "type": "inject",
+        "z": "357706603463b3d3",
+        "g": "f5d9a3bec530f5d4",
+        "name": "Inject Once",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 120,
+        "wires": [
+            [
+                "359a20b6512d20f8"
+            ]
+        ]
+    },
+    {
+        "id": "267461a9ab492e36",
+        "type": "subflow:e7429ac6990a1dad",
+        "z": "357706603463b3d3",
+        "g": "e0dec88326b7bedf",
+        "name": "",
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "5b03d6c16f2aa603"
+            ]
+        ]
+    }
+]

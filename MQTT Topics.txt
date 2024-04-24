@@ -1,0 +1,6 @@
+pinpointdatamanager/razorline/razorstn1/production/bucketstate
+pinpointdatamanager/razorline/razorstn1/systemevents
+pinpointdatamanager/razorline/razorstn1/tracking
+pinpointdatamanager/razorline/razorstn1/production/likely
+pinpointdatamanager/razorline/razorstn1/production
+pinpointdatamanager/razorline/razorstn1/andonevents
