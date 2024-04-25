@@ -1,17 +1,6 @@
 import json
 import os
-import read
-
-# Helper function to find the station number from the MQTT in node name
-def extract_station_number(node_name):
-    # This regex pattern finds one or more digits at the end of the string.
-    match = re.search(r'\d+$', node_name)
-    if match:
-        # Convert the found digits into an integer. Subtracts one so it is an index of an list
-        return int(match.group()) - 1
-    else:
-        # Handle cases where no number is found.
-        return None 
+from helper import *
 
 # File setup for loading and saving JSON
 original_file_name = 'flows.json'
@@ -39,7 +28,7 @@ print(""" You will need:
 while True:
     try:
         num_stations = int(input("Enter the number of stations that will be displayed on the dashboard: "))
-        if 4 <= num_stations <= 12:
+        if 2 <= num_stations <= 12:
             break
         else:
             print("Please enter an integer between 4 and 12.")
@@ -52,7 +41,7 @@ display_names = []
 # Collecting station names and display names with validation
 for i in range(num_stations):
     while True:
-        station_name = input(f"\nEnter the name for station {i+1} as it appears in an **MQTT topic**: ")
+        station_name = input(f"\nEnter the name for station {i+1} as it appears in an MQTT TOPIC: ")
         if ' ' not in station_name:
             station_names.append(station_name)
             break
@@ -85,6 +74,9 @@ topics = {
     'Andon Events': bucket_state_topic.replace('production/bucketstate', 'andonevents')
 }
 
+indices_to_delete = []
+index = 0
+
 # Updating node topics and names in the JSON data
 for node in data:
     node_type = node.get('type')
@@ -96,15 +88,51 @@ for node in data:
                 topic = topics[key]
                 station_number = extract_station_number(node_name)
                 if station_number is not None:
-                    node['topic'] = topic.replace(station_names[0], station_names[station_number])
+                    if station_number < num_stations:
+                        node['topic'] = topic.replace(station_names[0], station_names[station_number])
+                    else:
+                        indices_to_delete.append(index)
+                else:
+                    if 'Likely' in node['name']:
+                        node['topic'] = topics['Likely']
+                    elif 'Production' in node['name']:
+                        node['topic'] = topics['Production']
        
     elif node_type == 'ui_tab':
         station_number = extract_station_number(node_name)
         if station_number is not None:
-            node['name'] = display_names[station_number]
+            if station_number < num_stations:
+                node['name'] = display_names[station_number]
+            else:
+                indices_to_delete.append(index)
             
     elif node_type == 'switch':
-        ################################ CONTINUE HERE
+        new_rules = node['rules'][0 : num_stations]
+        for i in range(len(new_rules)):
+            new_rules[i]['v'] = station_names[i]
+        node['rules'] = new_rules
+        
+        
+    elif node_type == 'ui_template':
+        station_number = extract_station_number(node_name)
+        if station_number is not None and station_number >= num_stations:
+            indices_to_delete.append(index)
+       
+    elif node_type == 'ui_group':
+        station_number = extract_station_number(node_name)
+        if station_number is not None and station_number >= num_stations:
+            indices_to_delete.append(index)
+            
+    elif node_type == 'ui_tab':
+        station_number = extract_station_number(node_name)
+        if station_number is not None and station_number >= num_stations:
+            indices_to_delete.append(index)
+        
+    index += 1
+
+indices_to_delete.sort(reverse=True)
+for index in indices_to_delete:
+    data.pop(index)
 
 # Writing the modified JSON to the new file
 with open(new_file_name, 'w') as file:

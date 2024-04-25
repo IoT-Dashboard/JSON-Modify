@@ -964,7 +964,7 @@
     {
         "id": "7ef3682674d06e4b",
         "type": "ui_tab",
-        "name": "Station 1",
+        "name": "Test 1",
         "icon": "fa-cog",
         "order": 2,
         "disabled": false,
@@ -984,7 +984,7 @@
     {
         "id": "3b3db93fbca84b4c",
         "type": "ui_tab",
-        "name": "Station 2",
+        "name": "Test 2",
         "icon": "fa-cog",
         "order": 3,
         "disabled": false,
@@ -993,18 +993,9 @@
     {
         "id": "f59bb87e697962cc",
         "type": "ui_tab",
-        "name": "Station 3",
+        "name": "Test 3",
         "icon": "fa-cog",
         "order": 4,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "a7ab19659da5746c",
-        "type": "ui_tab",
-        "name": "Station 4",
-        "icon": "fa-cog",
-        "order": 5,
         "disabled": false,
         "hidden": false
     },
@@ -1064,17 +1055,6 @@
         "className": ""
     },
     {
-        "id": "cd5ad1d0bf7f8611",
-        "type": "ui_group",
-        "name": "Station 4",
-        "tab": "85fad804f154fb4a",
-        "order": 4,
-        "disp": false,
-        "width": "10",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "eb66bc0c77b54613",
         "type": "ui_group",
         "name": "Active Andon Events",
@@ -1097,33 +1077,11 @@
         "className": ""
     },
     {
-        "id": "c263be4ca6df137a",
-        "type": "ui_group",
-        "name": "Station 5",
-        "tab": "85fad804f154fb4a",
-        "order": 5,
-        "disp": false,
-        "width": "10",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "519feba73659cca7",
         "type": "ui_group",
         "name": "Station 6",
         "tab": "85fad804f154fb4a",
         "order": 6,
-        "disp": false,
-        "width": "10",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "77eddc1de9c1ddaf",
-        "type": "ui_group",
-        "name": "Station 7",
-        "tab": "85fad804f154fb4a",
-        "order": 7,
         "disp": false,
         "width": "10",
         "collapse": false,
@@ -1141,33 +1099,11 @@
         "className": ""
     },
     {
-        "id": "e4fbc8a4df7e3429",
-        "type": "ui_group",
-        "name": "Station 9",
-        "tab": "85fad804f154fb4a",
-        "order": 9,
-        "disp": false,
-        "width": "10",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "fe00eb86e5ca025b",
         "type": "ui_group",
         "name": "Station 10",
         "tab": "85fad804f154fb4a",
         "order": 10,
-        "disp": false,
-        "width": "10",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "91c33a1c95225876",
-        "type": "ui_group",
-        "name": "Station 11",
-        "tab": "85fad804f154fb4a",
-        "order": 11,
         "disp": false,
         "width": "10",
         "collapse": false,
@@ -1185,29 +1121,11 @@
         "className": ""
     },
     {
-        "id": "73560290045af45c",
-        "type": "ui_tab",
-        "name": "Station 5",
-        "icon": "fa-cog",
-        "order": 6,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "58cebfd6e09fa325",
         "type": "ui_tab",
         "name": "Station 6",
         "icon": "fa-cog",
         "order": 7,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "e0af8fb406054246",
-        "type": "ui_tab",
-        "name": "Station 7",
-        "icon": "fa-cog",
-        "order": 8,
         "disabled": false,
         "hidden": false
     },
@@ -1221,29 +1139,11 @@
         "hidden": false
     },
     {
-        "id": "7309ee706f28c82d",
-        "type": "ui_tab",
-        "name": "Station 9",
-        "icon": "fa-cog",
-        "order": 10,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "972dddef78424f57",
         "type": "ui_tab",
         "name": "Station 10",
         "icon": "fa-cog",
         "order": 11,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "c707e34a9a229736",
-        "type": "ui_tab",
-        "name": "Station 11",
-        "icon": "fa-cog",
-        "order": 12,
         "disabled": false,
         "hidden": false
     },
@@ -1819,7 +1719,7 @@
         "type": "mqtt in",
         "z": "debde317875b9fac",
         "name": "Bucket State 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
+        "topic": "test1/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -1851,7 +1751,7 @@
         "type": "mqtt in",
         "z": "debde317875b9fac",
         "name": "Bucket State 2",
-        "topic": "pinpointdatamanager/razorline/razorstn2/production/bucketstate",
+        "topic": "test2/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -1882,7 +1782,7 @@
         "type": "mqtt in",
         "z": "debde317875b9fac",
         "name": "Bucket State 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
+        "topic": "test3/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -1909,27 +1809,6 @@
         ]
     },
     {
-        "id": "057b4ed6b566bbde",
-        "type": "mqtt in",
-        "z": "debde317875b9fac",
-        "name": "Bucket State 4",
-        "topic": "pinpointdatamanager/razorline/razorstn4/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 260,
-        "wires": [
-            [
-                "fd28849d145936d9"
-            ]
-        ]
-    },
-    {
         "id": "fd28849d145936d9",
         "type": "subflow:d2262f700e8b5c77",
         "z": "debde317875b9fac",
@@ -1937,27 +1816,6 @@
         "y": 260,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "057e993a475ab0c8",
-        "type": "mqtt in",
-        "z": "debde317875b9fac",
-        "name": "Bucket State 5",
-        "topic": "a",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 360,
-        "wires": [
-            [
-                "47a6d560af1b3d72"
-            ]
         ]
     },
     {
@@ -1972,27 +1830,6 @@
         ]
     },
     {
-        "id": "48e6d8b65ed2272d",
-        "type": "mqtt in",
-        "z": "debde317875b9fac",
-        "name": "Bucket State 6",
-        "topic": "a",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 420,
-        "wires": [
-            [
-                "6db31646eb906280"
-            ]
-        ]
-    },
-    {
         "id": "6db31646eb906280",
         "type": "subflow:d2262f700e8b5c77",
         "z": "debde317875b9fac",
@@ -2000,27 +1837,6 @@
         "y": 420,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "8a51c315598dd23a",
-        "type": "mqtt in",
-        "z": "debde317875b9fac",
-        "name": "Bucket State 7",
-        "topic": "a",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 480,
-        "wires": [
-            [
-                "bc6dbcbdee22841c"
-            ]
         ]
     },
     {
@@ -2034,27 +1850,6 @@
         ]
     },
     {
-        "id": "2c9c49f030880791",
-        "type": "mqtt in",
-        "z": "debde317875b9fac",
-        "name": "Bucket State 8",
-        "topic": "a",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 540,
-        "wires": [
-            [
-                "2adef7348ccd19a2"
-            ]
-        ]
-    },
-    {
         "id": "2adef7348ccd19a2",
         "type": "subflow:d2262f700e8b5c77",
         "z": "debde317875b9fac",
@@ -2062,27 +1857,6 @@
         "y": 540,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "d89d48e07674e0e2",
-        "type": "mqtt in",
-        "z": "debde317875b9fac",
-        "name": "Bucket State 9",
-        "topic": "a",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 640,
-        "wires": [
-            [
-                "c214d7af5929736b"
-            ]
         ]
     },
     {
@@ -2097,27 +1871,6 @@
         ]
     },
     {
-        "id": "4f8264bc7cd1f128",
-        "type": "mqtt in",
-        "z": "debde317875b9fac",
-        "name": "Bucket State 10",
-        "topic": "a",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 700,
-        "wires": [
-            [
-                "582dc322779d2e61"
-            ]
-        ]
-    },
-    {
         "id": "582dc322779d2e61",
         "type": "subflow:d2262f700e8b5c77",
         "z": "debde317875b9fac",
@@ -2128,27 +1881,6 @@
         ]
     },
     {
-        "id": "7e7dbffb7aefa675",
-        "type": "mqtt in",
-        "z": "debde317875b9fac",
-        "name": "Bucket State 11",
-        "topic": "a",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 760,
-        "wires": [
-            [
-                "477507f14cf89a5e"
-            ]
-        ]
-    },
-    {
         "id": "477507f14cf89a5e",
         "type": "subflow:d2262f700e8b5c77",
         "z": "debde317875b9fac",
@@ -2156,27 +1888,6 @@
         "y": 760,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "34aefc26318d1155",
-        "type": "mqtt in",
-        "z": "debde317875b9fac",
-        "name": "Bucket State 12",
-        "topic": "a",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 820,
-        "wires": [
-            [
-                "60bdf4480a5e957e"
-            ]
         ]
     },
     {
@@ -2194,7 +1905,7 @@
         "type": "mqtt in",
         "z": "f7af327ab49dcd5b",
         "name": "System Events 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/systemevents",
+        "topic": "test1/systemevents",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -2226,7 +1937,7 @@
         "type": "mqtt in",
         "z": "f7af327ab49dcd5b",
         "name": "System Events 2",
-        "topic": "pinpointdatamanager/razorline/razorstn2/systemevents",
+        "topic": "test2/systemevents",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -2257,7 +1968,7 @@
         "type": "mqtt in",
         "z": "f7af327ab49dcd5b",
         "name": "System Events 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/systemevents",
+        "topic": "test3/systemevents",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -2284,27 +1995,6 @@
         ]
     },
     {
-        "id": "ebe2237c44c832cd",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "System Events 4",
-        "topic": "pinpointdatamanager/razorline/razorstn4/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 500,
-        "wires": [
-            [
-                "b1f8ed47d3ba8bcc"
-            ]
-        ]
-    },
-    {
         "id": "b1f8ed47d3ba8bcc",
         "type": "subflow:a8ba1a8e7c72d5f7",
         "z": "f7af327ab49dcd5b",
@@ -2319,7 +2009,7 @@
         "type": "mqtt in",
         "z": "f7af327ab49dcd5b",
         "name": "Bucket State 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
+        "topic": "test1/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -2340,7 +2030,7 @@
         "type": "mqtt in",
         "z": "f7af327ab49dcd5b",
         "name": "Bucket State 2",
-        "topic": "pinpointdatamanager/razorline/razorstn2/production/bucketstate",
+        "topic": "test2/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -2361,7 +2051,7 @@
         "type": "mqtt in",
         "z": "f7af327ab49dcd5b",
         "name": "Bucket State 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
+        "topic": "test3/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -2374,27 +2064,6 @@
         "wires": [
             [
                 "6d1150690d61bc86"
-            ]
-        ]
-    },
-    {
-        "id": "55430bfc1cbbd98b",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "Bucket State 4",
-        "topic": "pinpointdatamanager/razorline/razorstn4/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 560,
-        "wires": [
-            [
-                "b1f8ed47d3ba8bcc"
             ]
         ]
     },
@@ -2431,27 +2100,6 @@
         ]
     },
     {
-        "id": "1989e9e444a0f3d1",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "System Events 6",
-        "topic": "pinpointdatamanager/razorline/razorstn2/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 820,
-        "wires": [
-            [
-                "7e449365e59f21db"
-            ]
-        ]
-    },
-    {
         "id": "7e449365e59f21db",
         "type": "subflow:a8ba1a8e7c72d5f7",
         "z": "f7af327ab49dcd5b",
@@ -2459,27 +2107,6 @@
         "y": 820,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "4abd9f771e9a0044",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "System Events 7",
-        "topic": "pinpointdatamanager/razorline/razorstn3/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 960,
-        "wires": [
-            [
-                "a7d61b0d5efaa1f3"
-            ]
         ]
     },
     {
@@ -2493,27 +2120,6 @@
         ]
     },
     {
-        "id": "04bafee912f706cd",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "System Events 8",
-        "topic": "pinpointdatamanager/razorline/razorstn4/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1100,
-        "wires": [
-            [
-                "2adab11e52333005"
-            ]
-        ]
-    },
-    {
         "id": "2adab11e52333005",
         "type": "subflow:a8ba1a8e7c72d5f7",
         "z": "f7af327ab49dcd5b",
@@ -2521,27 +2127,6 @@
         "y": 1100,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "e9ab2a3ecc0ea5d2",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "Bucket State 5",
-        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 740,
-        "wires": [
-            [
-                "8929447720965663"
-            ]
         ]
     },
     {
@@ -2562,27 +2147,6 @@
         "wires": [
             [
                 "7e449365e59f21db"
-            ]
-        ]
-    },
-    {
-        "id": "12f8e9ee1f9db6a7",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "Bucket State 7",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1020,
-        "wires": [
-            [
-                "a7d61b0d5efaa1f3"
             ]
         ]
     },
@@ -2608,27 +2172,6 @@
         ]
     },
     {
-        "id": "d0fab924c2beab18",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "System Events 9",
-        "topic": "pinpointdatamanager/razorline/razorstn1/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1280,
-        "wires": [
-            [
-                "9a8a7fd8e53851f5"
-            ]
-        ]
-    },
-    {
         "id": "9a8a7fd8e53851f5",
         "type": "subflow:a8ba1a8e7c72d5f7",
         "z": "f7af327ab49dcd5b",
@@ -2637,27 +2180,6 @@
         "y": 1280,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "a8c085ae83e3fad0",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "System Events 10",
-        "topic": "pinpointdatamanager/razorline/razorstn2/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 1420,
-        "wires": [
-            [
-                "223ab5712dd8c524"
-            ]
         ]
     },
     {
@@ -2671,27 +2193,6 @@
         ]
     },
     {
-        "id": "6143f96b9d9e3ab3",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "System Events 11",
-        "topic": "pinpointdatamanager/razorline/razorstn3/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 1560,
-        "wires": [
-            [
-                "1af702f4352a968f"
-            ]
-        ]
-    },
-    {
         "id": "1af702f4352a968f",
         "type": "subflow:a8ba1a8e7c72d5f7",
         "z": "f7af327ab49dcd5b",
@@ -2702,27 +2203,6 @@
         ]
     },
     {
-        "id": "9b3512a78e32439e",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "System Events 12",
-        "topic": "pinpointdatamanager/razorline/razorstn4/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 1700,
-        "wires": [
-            [
-                "345a9ea7bdb85830"
-            ]
-        ]
-    },
-    {
         "id": "345a9ea7bdb85830",
         "type": "subflow:a8ba1a8e7c72d5f7",
         "z": "f7af327ab49dcd5b",
@@ -2730,27 +2210,6 @@
         "y": 1700,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "dede13729fb59000",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "Bucket State 9",
-        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1340,
-        "wires": [
-            [
-                "9a8a7fd8e53851f5"
-            ]
         ]
     },
     {
@@ -2771,27 +2230,6 @@
         "wires": [
             [
                 "223ab5712dd8c524"
-            ]
-        ]
-    },
-    {
-        "id": "2bc2aa0440159d31",
-        "type": "mqtt in",
-        "z": "f7af327ab49dcd5b",
-        "name": "Bucket State 11",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1620,
-        "wires": [
-            [
-                "1af702f4352a968f"
             ]
         ]
     },
@@ -2821,7 +2259,7 @@
         "type": "mqtt in",
         "z": "2976b3f8c60c3097",
         "name": "Tracking 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/tracking",
+        "topic": "test1/tracking",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -2853,7 +2291,7 @@
         "type": "mqtt in",
         "z": "2976b3f8c60c3097",
         "name": "Tracking 2",
-        "topic": "pinpointdatamanager/razorline/razorstn2/tracking",
+        "topic": "test2/tracking",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -2885,7 +2323,7 @@
         "type": "mqtt in",
         "z": "2976b3f8c60c3097",
         "name": "Tracking 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/tracking",
+        "topic": "test3/tracking",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -2912,27 +2350,6 @@
         ]
     },
     {
-        "id": "8d36204fa5cb60a1",
-        "type": "mqtt in",
-        "z": "2976b3f8c60c3097",
-        "name": "Tracking 4",
-        "topic": "pinpointdatamanager/razorline/razorstn4/tracking",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 240,
-        "wires": [
-            [
-                "4782add81d8d3fcd"
-            ]
-        ]
-    },
-    {
         "id": "4782add81d8d3fcd",
         "type": "subflow:d83bfe0b60ca7ed5",
         "z": "2976b3f8c60c3097",
@@ -2941,27 +2358,6 @@
         "y": 240,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "de050a4a77075b0e",
-        "type": "mqtt in",
-        "z": "2976b3f8c60c3097",
-        "name": "Tracking 5",
-        "topic": "pinpointdatamanager/razorline/razorstn1/tracking",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 340,
-        "wires": [
-            [
-                "39a679859730d9e6"
-            ]
         ]
     },
     {
@@ -2976,27 +2372,6 @@
         ]
     },
     {
-        "id": "070bdec1f5c6d03f",
-        "type": "mqtt in",
-        "z": "2976b3f8c60c3097",
-        "name": "Tracking 6",
-        "topic": "pinpointdatamanager/razorline/razorstn2/tracking",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 400,
-        "wires": [
-            [
-                "b23a561cfd8239a0"
-            ]
-        ]
-    },
-    {
         "id": "b23a561cfd8239a0",
         "type": "subflow:d83bfe0b60ca7ed5",
         "z": "2976b3f8c60c3097",
@@ -3008,27 +2383,6 @@
         ]
     },
     {
-        "id": "36c55258abf4661a",
-        "type": "mqtt in",
-        "z": "2976b3f8c60c3097",
-        "name": "Tracking 7",
-        "topic": "pinpointdatamanager/razorline/razorstn3/tracking",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 460,
-        "wires": [
-            [
-                "a507378b4fbb57d0"
-            ]
-        ]
-    },
-    {
         "id": "a507378b4fbb57d0",
         "type": "subflow:d83bfe0b60ca7ed5",
         "z": "2976b3f8c60c3097",
@@ -3036,27 +2390,6 @@
         "y": 460,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "ceccbd60e6a5bc7f",
-        "type": "mqtt in",
-        "z": "2976b3f8c60c3097",
-        "name": "Tracking 8",
-        "topic": "pinpointdatamanager/razorline/razorstn4/tracking",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 520,
-        "wires": [
-            [
-                "2ec6e39e583f2b52"
-            ]
         ]
     },
     {
@@ -3071,27 +2404,6 @@
         ]
     },
     {
-        "id": "a60d77c4466546fd",
-        "type": "mqtt in",
-        "z": "2976b3f8c60c3097",
-        "name": "Tracking 9",
-        "topic": "pinpointdatamanager/razorline/razorstn1/tracking",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 620,
-        "wires": [
-            [
-                "86a28e584984135d"
-            ]
-        ]
-    },
-    {
         "id": "86a28e584984135d",
         "type": "subflow:d83bfe0b60ca7ed5",
         "z": "2976b3f8c60c3097",
@@ -3100,27 +2412,6 @@
         "y": 620,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "efc16edcd95ba491",
-        "type": "mqtt in",
-        "z": "2976b3f8c60c3097",
-        "name": "Tracking 10",
-        "topic": "pinpointdatamanager/razorline/razorstn2/tracking",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 680,
-        "wires": [
-            [
-                "5e066c4223347944"
-            ]
         ]
     },
     {
@@ -3135,27 +2426,6 @@
         ]
     },
     {
-        "id": "56f82e1d628cbef8",
-        "type": "mqtt in",
-        "z": "2976b3f8c60c3097",
-        "name": "Tracking 11",
-        "topic": "pinpointdatamanager/razorline/razorstn3/tracking",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 740,
-        "wires": [
-            [
-                "f8f378caebc62b04"
-            ]
-        ]
-    },
-    {
         "id": "f8f378caebc62b04",
         "type": "subflow:d83bfe0b60ca7ed5",
         "z": "2976b3f8c60c3097",
@@ -3163,27 +2433,6 @@
         "y": 740,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "d63af7fcc705a50e",
-        "type": "mqtt in",
-        "z": "2976b3f8c60c3097",
-        "name": "Tracking 12",
-        "topic": "pinpointdatamanager/razorline/razorstn4/tracking",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 800,
-        "wires": [
-            [
-                "4c0aad6593090d59"
-            ]
         ]
     },
     {
@@ -3202,7 +2451,7 @@
         "type": "mqtt in",
         "z": "fc1b005081474eee",
         "name": "Andon Events 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/andonevents",
+        "topic": "test1/andonevents",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -3475,7 +2724,7 @@
         "type": "mqtt in",
         "z": "fc1b005081474eee",
         "name": "Andon Events 2",
-        "topic": "pinpointdatamanager/razorline/razorstn2/andonevents",
+        "topic": "test2/andonevents",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -3507,7 +2756,7 @@
         "type": "mqtt in",
         "z": "fc1b005081474eee",
         "name": "Andon Events 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/andonevents",
+        "topic": "test3/andonevents",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -3535,27 +2784,6 @@
         ]
     },
     {
-        "id": "458eb8ec3ec8b0d5",
-        "type": "mqtt in",
-        "z": "fc1b005081474eee",
-        "name": "Andon Events 4",
-        "topic": "pinpointdatamanager/razorline/razorstn4/andonevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 240,
-        "wires": [
-            [
-                "c15ef14638a55d5f"
-            ]
-        ]
-    },
-    {
         "id": "c15ef14638a55d5f",
         "type": "subflow:11c63ab4c05be4fa",
         "z": "fc1b005081474eee",
@@ -3564,27 +2792,6 @@
         "y": 240,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "5d5ed8cebfed9db2",
-        "type": "mqtt in",
-        "z": "fc1b005081474eee",
-        "name": "Andon Events 5",
-        "topic": "pinpointdatamanager/razorline/razorstn1/andonevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 340,
-        "wires": [
-            [
-                "2d5e1d5f5c1b456c"
-            ]
         ]
     },
     {
@@ -3599,27 +2806,6 @@
         ]
     },
     {
-        "id": "1b972f46b61f27af",
-        "type": "mqtt in",
-        "z": "fc1b005081474eee",
-        "name": "Andon Events 6",
-        "topic": "pinpointdatamanager/razorline/razorstn2/andonevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 400,
-        "wires": [
-            [
-                "f5e05f63d2a1f539"
-            ]
-        ]
-    },
-    {
         "id": "f5e05f63d2a1f539",
         "type": "subflow:11c63ab4c05be4fa",
         "z": "fc1b005081474eee",
@@ -3628,27 +2814,6 @@
         "y": 400,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "564b90e608ce2cfe",
-        "type": "mqtt in",
-        "z": "fc1b005081474eee",
-        "name": "Andon Events 7",
-        "topic": "pinpointdatamanager/razorline/razorstn3/andonevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 460,
-        "wires": [
-            [
-                "2c8782028622977b"
-            ]
         ]
     },
     {
@@ -3663,27 +2828,6 @@
         ]
     },
     {
-        "id": "4876e88bd0204d10",
-        "type": "mqtt in",
-        "z": "fc1b005081474eee",
-        "name": "Andon Events 8",
-        "topic": "pinpointdatamanager/razorline/razorstn4/andonevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 520,
-        "wires": [
-            [
-                "d6f4091258dbdc1c"
-            ]
-        ]
-    },
-    {
         "id": "d6f4091258dbdc1c",
         "type": "subflow:11c63ab4c05be4fa",
         "z": "fc1b005081474eee",
@@ -3692,27 +2836,6 @@
         "y": 520,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "a1afc65a44b676bc",
-        "type": "mqtt in",
-        "z": "fc1b005081474eee",
-        "name": "Andon Events 9",
-        "topic": "pinpointdatamanager/razorline/razorstn1/andonevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 620,
-        "wires": [
-            [
-                "30b463cf744bb417"
-            ]
         ]
     },
     {
@@ -3727,27 +2850,6 @@
         ]
     },
     {
-        "id": "1fd52ae73e0a74e6",
-        "type": "mqtt in",
-        "z": "fc1b005081474eee",
-        "name": "Andon Events 10",
-        "topic": "pinpointdatamanager/razorline/razorstn2/andonevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 680,
-        "wires": [
-            [
-                "7a96eced3c3159f2"
-            ]
-        ]
-    },
-    {
         "id": "7a96eced3c3159f2",
         "type": "subflow:11c63ab4c05be4fa",
         "z": "fc1b005081474eee",
@@ -3759,27 +2861,6 @@
         ]
     },
     {
-        "id": "c5da999081229202",
-        "type": "mqtt in",
-        "z": "fc1b005081474eee",
-        "name": "Andon Events 11",
-        "topic": "pinpointdatamanager/razorline/razorstn3/andonevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 740,
-        "wires": [
-            [
-                "de26546c0b083538"
-            ]
-        ]
-    },
-    {
         "id": "de26546c0b083538",
         "type": "subflow:11c63ab4c05be4fa",
         "z": "fc1b005081474eee",
@@ -3788,27 +2869,6 @@
         "y": 740,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "3a322548f83a89cd",
-        "type": "mqtt in",
-        "z": "fc1b005081474eee",
-        "name": "Andon Events 12",
-        "topic": "pinpointdatamanager/razorline/razorstn4/andonevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 800,
-        "wires": [
-            [
-                "1417223564f23a99"
-            ]
         ]
     },
     {
@@ -3918,7 +2978,7 @@
         "type": "mqtt in",
         "z": "722fb55c0b4e180b",
         "name": "Bucket State 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
+        "topic": "test1/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -3997,7 +3057,7 @@
         "type": "mqtt in",
         "z": "722fb55c0b4e180b",
         "name": "Bucket State 2",
-        "topic": "pinpointdatamanager/razorline/razorstn2/production/bucketstate",
+        "topic": "test2/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -4055,7 +3115,7 @@
         "type": "mqtt in",
         "z": "722fb55c0b4e180b",
         "name": "Bucket State 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
+        "topic": "test3/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -4105,27 +3165,6 @@
             ],
             [
                 "06a0ccbdac412e5e"
-            ]
-        ]
-    },
-    {
-        "id": "f545e6da53994842",
-        "type": "mqtt in",
-        "z": "722fb55c0b4e180b",
-        "name": "Bucket State 4",
-        "topic": "pinpointdatamanager/razorline/razorstn4/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 440,
-        "wires": [
-            [
-                "25fcf975056c3530"
             ]
         ]
     },
@@ -4230,27 +3269,6 @@
         ]
     },
     {
-        "id": "ed1e787b0045b970",
-        "type": "ui_template",
-        "z": "722fb55c0b4e180b",
-        "group": "cd5ad1d0bf7f8611",
-        "name": "(M) Display Bucket State 4",
-        "order": 3,
-        "width": 5,
-        "height": 3,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 860,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3bc076bfbf4359ae",
         "type": "ui_template",
         "z": "722fb55c0b4e180b",
@@ -4269,27 +3287,6 @@
         "y": 40,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "937fafee314413d5",
-        "type": "mqtt in",
-        "z": "722fb55c0b4e180b",
-        "name": "Bucket State 5",
-        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 580,
-        "wires": [
-            [
-                "8cda8012a6520596"
-            ]
         ]
     },
     {
@@ -4326,27 +3323,6 @@
             ],
             [
                 "972eee0f2044be1b"
-            ]
-        ]
-    },
-    {
-        "id": "77885f5445a786ad",
-        "type": "mqtt in",
-        "z": "722fb55c0b4e180b",
-        "name": "Bucket State 6",
-        "topic": "pinpointdatamanager/razorline/razorstn2/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 680,
-        "wires": [
-            [
-                "c37e20240da007bc"
             ]
         ]
     },
@@ -4388,27 +3364,6 @@
         ]
     },
     {
-        "id": "65243f5cd8a11c6d",
-        "type": "mqtt in",
-        "z": "722fb55c0b4e180b",
-        "name": "Bucket State 7",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 780,
-        "wires": [
-            [
-                "3d1b29eed133a3ed"
-            ]
-        ]
-    },
-    {
         "id": "9d11f26c32257f3c",
         "type": "ui_template",
         "z": "722fb55c0b4e180b",
@@ -4442,27 +3397,6 @@
             ],
             [
                 "34504528ca6e2e3f"
-            ]
-        ]
-    },
-    {
-        "id": "491b44f22712b295",
-        "type": "mqtt in",
-        "z": "722fb55c0b4e180b",
-        "name": "Bucket State 8",
-        "topic": "pinpointdatamanager/razorline/razorstn4/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 880,
-        "wires": [
-            [
-                "e16aa31536bdba7d"
             ]
         ]
     },
@@ -4504,27 +3438,6 @@
         ]
     },
     {
-        "id": "972eee0f2044be1b",
-        "type": "ui_template",
-        "z": "722fb55c0b4e180b",
-        "group": "c263be4ca6df137a",
-        "name": "(M) Display Bucket State 5",
-        "order": 3,
-        "width": 5,
-        "height": 3,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 860,
-        "y": 600,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f5f19d2bb2e16f92",
         "type": "ui_template",
         "z": "722fb55c0b4e180b",
@@ -4541,27 +3454,6 @@
         "className": "",
         "x": 860,
         "y": 700,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "34504528ca6e2e3f",
-        "type": "ui_template",
-        "z": "722fb55c0b4e180b",
-        "group": "77eddc1de9c1ddaf",
-        "name": "(M) Display Bucket State 7",
-        "order": 3,
-        "width": 5,
-        "height": 3,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 860,
-        "y": 800,
         "wires": [
             []
         ]
@@ -4585,27 +3477,6 @@
         "y": 900,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "dc743748f369bbee",
-        "type": "mqtt in",
-        "z": "722fb55c0b4e180b",
-        "name": "Bucket State 9",
-        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1020,
-        "wires": [
-            [
-                "660150ac8f2c0c10"
-            ]
         ]
     },
     {
@@ -4642,27 +3513,6 @@
             ],
             [
                 "54b28cc582a59d12"
-            ]
-        ]
-    },
-    {
-        "id": "6fc81c82e90a8e88",
-        "type": "mqtt in",
-        "z": "722fb55c0b4e180b",
-        "name": "Bucket State 10",
-        "topic": "pinpointdatamanager/razorline/razorstn2/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1120,
-        "wires": [
-            [
-                "cc169295ef4af3e1"
             ]
         ]
     },
@@ -4704,27 +3554,6 @@
         ]
     },
     {
-        "id": "b3e4474fee1c7ad0",
-        "type": "mqtt in",
-        "z": "722fb55c0b4e180b",
-        "name": "Bucket State 11",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1220,
-        "wires": [
-            [
-                "8786b199ff03645f"
-            ]
-        ]
-    },
-    {
         "id": "8db11b09e9fc7808",
         "type": "ui_template",
         "z": "722fb55c0b4e180b",
@@ -4758,27 +3587,6 @@
             ],
             [
                 "61001a916884cb1f"
-            ]
-        ]
-    },
-    {
-        "id": "d5d1bad036cccbb0",
-        "type": "mqtt in",
-        "z": "722fb55c0b4e180b",
-        "name": "Bucket State 12",
-        "topic": "pinpointdatamanager/razorline/razorstn4/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1320,
-        "wires": [
-            [
-                "2a8833ccd35fb671"
             ]
         ]
     },
@@ -4820,27 +3628,6 @@
         ]
     },
     {
-        "id": "54b28cc582a59d12",
-        "type": "ui_template",
-        "z": "722fb55c0b4e180b",
-        "group": "e4fbc8a4df7e3429",
-        "name": "(M) Display Bucket State 9",
-        "order": 3,
-        "width": 5,
-        "height": 3,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 860,
-        "y": 1040,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "4781b75e207d9e9f",
         "type": "ui_template",
         "z": "722fb55c0b4e180b",
@@ -4857,27 +3644,6 @@
         "className": "",
         "x": 860,
         "y": 1140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "61001a916884cb1f",
-        "type": "ui_template",
-        "z": "722fb55c0b4e180b",
-        "group": "91c33a1c95225876",
-        "name": "(M) Display Bucket State 11",
-        "order": 3,
-        "width": 5,
-        "height": 3,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 860,
-        "y": 1240,
         "wires": [
             []
         ]
@@ -4908,7 +3674,7 @@
         "type": "mqtt in",
         "z": "2695f9f24cf7e4b0",
         "name": "System Events 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/systemevents",
+        "topic": "test1/systemevents",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -4950,7 +3716,7 @@
         "type": "mqtt in",
         "z": "2695f9f24cf7e4b0",
         "name": "Bucket State 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
+        "topic": "test1/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -4987,7 +3753,7 @@
         "type": "mqtt in",
         "z": "2695f9f24cf7e4b0",
         "name": "System Events 2",
-        "topic": "pinpointdatamanager/razorline/razorstn2/systemevents",
+        "topic": "test2/systemevents",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -5029,7 +3795,7 @@
         "type": "mqtt in",
         "z": "2695f9f24cf7e4b0",
         "name": "Bucket State 2",
-        "topic": "pinpointdatamanager/razorline/razorstn2/production/bucketstate",
+        "topic": "test2/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -5065,7 +3831,7 @@
         "type": "mqtt in",
         "z": "2695f9f24cf7e4b0",
         "name": "System Events 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/systemevents",
+        "topic": "test3/systemevents",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -5107,7 +3873,7 @@
         "type": "mqtt in",
         "z": "2695f9f24cf7e4b0",
         "name": "Bucket State 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
+        "topic": "test3/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5ce2cab739c5a822",
@@ -5139,27 +3905,6 @@
         ]
     },
     {
-        "id": "25f6e7ea7ba9380b",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "System Events 4",
-        "topic": "pinpointdatamanager/razorline/razorstn4/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 480,
-        "wires": [
-            [
-                "2b94f0f4af91a6e0"
-            ]
-        ]
-    },
-    {
         "id": "1a654d854ecb4528",
         "type": "ui_template",
         "z": "2695f9f24cf7e4b0",
@@ -5178,27 +3923,6 @@
         "y": 480,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "1fcb2f0cda3491e1",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "Bucket State 4",
-        "topic": "pinpointdatamanager/razorline/razorstn4/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 540,
-        "wires": [
-            [
-                "2b94f0f4af91a6e0"
-            ]
         ]
     },
     {
@@ -5281,27 +4005,6 @@
         ]
     },
     {
-        "id": "c43ba1dbef9b0171",
-        "type": "ui_template",
-        "z": "2695f9f24cf7e4b0",
-        "group": "cd5ad1d0bf7f8611",
-        "name": "(M) Display Cycle Status 4",
-        "order": 4,
-        "width": 5,
-        "height": 3,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 940,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "89c62f078f5341d0",
         "type": "mqtt in",
         "z": "2695f9f24cf7e4b0",
@@ -5320,27 +4023,6 @@
             [
                 "f9ebc28bf92306f3"
             ]
-        ]
-    },
-    {
-        "id": "3892785a43cf0eff",
-        "type": "ui_template",
-        "z": "2695f9f24cf7e4b0",
-        "group": "2e1da0c7f19845cd",
-        "name": "(S) Display Cycle Status 5",
-        "order": 4,
-        "width": 9,
-        "height": 4,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 930,
-        "y": 660,
-        "wires": [
-            []
         ]
     },
     {
@@ -5381,27 +4063,6 @@
         ]
     },
     {
-        "id": "7a56d8b16d7bf68b",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "System Events 6",
-        "topic": "pinpointdatamanager/razorline/razorstn2/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 800,
-        "wires": [
-            [
-                "c8feede17fbb9805"
-            ]
-        ]
-    },
-    {
         "id": "633d90606606dc53",
         "type": "ui_template",
         "z": "2695f9f24cf7e4b0",
@@ -5423,27 +4084,6 @@
         ]
     },
     {
-        "id": "239e4998bebeeb9d",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "Bucket State 6",
-        "topic": "pinpointdatamanager/razorline/razorstn2/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 860,
-        "wires": [
-            [
-                "c8feede17fbb9805"
-            ]
-        ]
-    },
-    {
         "id": "c8feede17fbb9805",
         "type": "subflow:2bd99a7d9fe65fb6",
         "z": "2695f9f24cf7e4b0",
@@ -5455,27 +4095,6 @@
             ],
             [
                 "4bd29c7e5a10224f"
-            ]
-        ]
-    },
-    {
-        "id": "a04fc305a742dc39",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "System Events 7",
-        "topic": "pinpointdatamanager/razorline/razorstn3/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 940,
-        "wires": [
-            [
-                "95e386d2b4345592"
             ]
         ]
     },
@@ -5501,27 +4120,6 @@
         ]
     },
     {
-        "id": "7c22a576b1c1bd34",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "Bucket State 7",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1000,
-        "wires": [
-            [
-                "95e386d2b4345592"
-            ]
-        ]
-    },
-    {
         "id": "95e386d2b4345592",
         "type": "subflow:2bd99a7d9fe65fb6",
         "z": "2695f9f24cf7e4b0",
@@ -5533,27 +4131,6 @@
             ],
             [
                 "f0546b8562a17b03"
-            ]
-        ]
-    },
-    {
-        "id": "2c9cdbf20656061d",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "System Events 8",
-        "topic": "pinpointdatamanager/razorline/razorstn4/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1080,
-        "wires": [
-            [
-                "afbd0a50c5fde011"
             ]
         ]
     },
@@ -5579,27 +4156,6 @@
         ]
     },
     {
-        "id": "5c3d03eb80806fa5",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "Bucket State 8",
-        "topic": "pinpointdatamanager/razorline/razorstn4/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1140,
-        "wires": [
-            [
-                "afbd0a50c5fde011"
-            ]
-        ]
-    },
-    {
         "id": "afbd0a50c5fde011",
         "type": "subflow:2bd99a7d9fe65fb6",
         "z": "2695f9f24cf7e4b0",
@@ -5613,27 +4169,6 @@
             [
                 "bc8fb432101dfc24"
             ]
-        ]
-    },
-    {
-        "id": "5e4aece4170f141e",
-        "type": "ui_template",
-        "z": "2695f9f24cf7e4b0",
-        "group": "c263be4ca6df137a",
-        "name": "(M) Display Cycle Status 5",
-        "order": 4,
-        "width": 5,
-        "height": 3,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 940,
-        "y": 700,
-        "wires": [
-            []
         ]
     },
     {
@@ -5653,27 +4188,6 @@
         "className": "",
         "x": 940,
         "y": 840,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f0546b8562a17b03",
-        "type": "ui_template",
-        "z": "2695f9f24cf7e4b0",
-        "group": "77eddc1de9c1ddaf",
-        "name": "(M) Display Cycle Status 7",
-        "order": 4,
-        "width": 5,
-        "height": 3,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 940,
-        "y": 980,
         "wires": [
             []
         ]
@@ -5700,27 +4214,6 @@
         ]
     },
     {
-        "id": "d7aeafbb7bd2faea",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "System Events 9",
-        "topic": "pinpointdatamanager/razorline/razorstn1/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1260,
-        "wires": [
-            [
-                "da861931fb5f6c31"
-            ]
-        ]
-    },
-    {
         "id": "ec716b54e24b615e",
         "type": "ui_template",
         "z": "2695f9f24cf7e4b0",
@@ -5742,27 +4235,6 @@
         ]
     },
     {
-        "id": "55c465a10721f967",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "Bucket State 9",
-        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1320,
-        "wires": [
-            [
-                "da861931fb5f6c31"
-            ]
-        ]
-    },
-    {
         "id": "da861931fb5f6c31",
         "type": "subflow:2bd99a7d9fe65fb6",
         "z": "2695f9f24cf7e4b0",
@@ -5775,27 +4247,6 @@
             ],
             [
                 "f710f1b537301fef"
-            ]
-        ]
-    },
-    {
-        "id": "f19dd064c473f278",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "System Events 10",
-        "topic": "pinpointdatamanager/razorline/razorstn2/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 1400,
-        "wires": [
-            [
-                "06c9963d2f5380c9"
             ]
         ]
     },
@@ -5821,27 +4272,6 @@
         ]
     },
     {
-        "id": "619e8fb1e099fdeb",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "Bucket State 10",
-        "topic": "pinpointdatamanager/razorline/razorstn2/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1460,
-        "wires": [
-            [
-                "06c9963d2f5380c9"
-            ]
-        ]
-    },
-    {
         "id": "06c9963d2f5380c9",
         "type": "subflow:2bd99a7d9fe65fb6",
         "z": "2695f9f24cf7e4b0",
@@ -5853,27 +4283,6 @@
             ],
             [
                 "65467346e0f86343"
-            ]
-        ]
-    },
-    {
-        "id": "f8d09c5de2bcccdf",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "System Events 11",
-        "topic": "pinpointdatamanager/razorline/razorstn3/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 1540,
-        "wires": [
-            [
-                "2a218142bc52b0bd"
             ]
         ]
     },
@@ -5899,27 +4308,6 @@
         ]
     },
     {
-        "id": "8bc265c99639dc64",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "Bucket State 11",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1600,
-        "wires": [
-            [
-                "2a218142bc52b0bd"
-            ]
-        ]
-    },
-    {
         "id": "2a218142bc52b0bd",
         "type": "subflow:2bd99a7d9fe65fb6",
         "z": "2695f9f24cf7e4b0",
@@ -5931,27 +4319,6 @@
             ],
             [
                 "4ddbed1621347ac5"
-            ]
-        ]
-    },
-    {
-        "id": "3c034af326dbb297",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "System Events 12",
-        "topic": "pinpointdatamanager/razorline/razorstn4/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 1680,
-        "wires": [
-            [
-                "2361866372eb0cbd"
             ]
         ]
     },
@@ -5977,27 +4344,6 @@
         ]
     },
     {
-        "id": "7c81af711958efc8",
-        "type": "mqtt in",
-        "z": "2695f9f24cf7e4b0",
-        "name": "Bucket State 12",
-        "topic": "pinpointdatamanager/razorline/razorstn4/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5ce2cab739c5a822",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1740,
-        "wires": [
-            [
-                "2361866372eb0cbd"
-            ]
-        ]
-    },
-    {
         "id": "2361866372eb0cbd",
         "type": "subflow:2bd99a7d9fe65fb6",
         "z": "2695f9f24cf7e4b0",
@@ -6011,27 +4357,6 @@
             [
                 "5054011d524c4162"
             ]
-        ]
-    },
-    {
-        "id": "f710f1b537301fef",
-        "type": "ui_template",
-        "z": "2695f9f24cf7e4b0",
-        "group": "e4fbc8a4df7e3429",
-        "name": "(M) Display Cycle Status 9",
-        "order": 4,
-        "width": 5,
-        "height": 3,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 940,
-        "y": 1300,
-        "wires": [
-            []
         ]
     },
     {
@@ -6051,27 +4376,6 @@
         "className": "",
         "x": 940,
         "y": 1440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4ddbed1621347ac5",
-        "type": "ui_template",
-        "z": "2695f9f24cf7e4b0",
-        "group": "91c33a1c95225876",
-        "name": "(M) Display Cycle Status 11",
-        "order": 4,
-        "width": 5,
-        "height": 3,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 940,
-        "y": 1580,
         "wires": [
             []
         ]
@@ -6102,7 +4406,7 @@
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
         "name": "Tracking 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/tracking",
+        "topic": "test1/tracking",
         "qos": "2",
         "datatype": "json",
         "broker": "d47490cf09efe9bc",
@@ -6123,7 +4427,7 @@
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
         "name": "System Events 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/systemevents",
+        "topic": "test1/systemevents",
         "qos": "2",
         "datatype": "json",
         "broker": "d47490cf09efe9bc",
@@ -6144,7 +4448,7 @@
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
         "name": "Bucket State 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
+        "topic": "test1/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "d47490cf09efe9bc",
@@ -6202,7 +4506,7 @@
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
         "name": "Tracking 2",
-        "topic": "pinpointdatamanager/razorline/razorstn2/tracking",
+        "topic": "test2/tracking",
         "qos": "2",
         "datatype": "json",
         "broker": "d47490cf09efe9bc",
@@ -6223,7 +4527,7 @@
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
         "name": "System Events 2",
-        "topic": "pinpointdatamanager/razorline/razorstn2/systemevents",
+        "topic": "test2/systemevents",
         "qos": "2",
         "datatype": "json",
         "broker": "d47490cf09efe9bc",
@@ -6244,7 +4548,7 @@
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
         "name": "Bucket State 2",
-        "topic": "pinpointdatamanager/razorline/razorstn2/production/bucketstate",
+        "topic": "test2/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "d47490cf09efe9bc",
@@ -6302,7 +4606,7 @@
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
         "name": "Tracking 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/tracking",
+        "topic": "test3/tracking",
         "qos": "2",
         "datatype": "json",
         "broker": "d47490cf09efe9bc",
@@ -6323,7 +4627,7 @@
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
         "name": "System Events 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/systemevents",
+        "topic": "test3/systemevents",
         "qos": "2",
         "datatype": "json",
         "broker": "d47490cf09efe9bc",
@@ -6344,7 +4648,7 @@
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
         "name": "Bucket State 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
+        "topic": "test3/production/bucketstate",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "d47490cf09efe9bc",
@@ -6398,27 +4702,6 @@
         ]
     },
     {
-        "id": "1df4b69fdc4d7736",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Tracking 4",
-        "topic": "pinpointdatamanager/razorline/razorstn4/tracking",
-        "qos": "2",
-        "datatype": "json",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 100,
-        "y": 640,
-        "wires": [
-            [
-                "a8dd251b22290fe2"
-            ]
-        ]
-    },
-    {
         "id": "d1212ffe364f3f8e",
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
@@ -6433,27 +4716,6 @@
         "inputs": 0,
         "x": 120,
         "y": 700,
-        "wires": [
-            [
-                "a8dd251b22290fe2"
-            ]
-        ]
-    },
-    {
-        "id": "b1ec7f47e1f35feb",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Bucket State 4",
-        "topic": "pinpointdatamanager/razorline/razorstn4/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 760,
         "wires": [
             [
                 "a8dd251b22290fe2"
@@ -6561,27 +4823,6 @@
         ]
     },
     {
-        "id": "f4fa79c901547d24",
-        "type": "ui_template",
-        "z": "5eedfd42acb6ab9d",
-        "group": "cd5ad1d0bf7f8611",
-        "name": "(M) Header 4",
-        "order": 1,
-        "width": 10,
-        "height": 2,
-        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use-multi\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 790,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "0db66d7cbaf7a573",
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
@@ -6596,27 +4837,6 @@
         "inputs": 0,
         "x": 100,
         "y": 880,
-        "wires": [
-            [
-                "6d87d019ec8f50b8"
-            ]
-        ]
-    },
-    {
-        "id": "4993dcd0621e8510",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "System Events 5",
-        "topic": "pinpointdatamanager/razorline/razorstn1/systemevents",
-        "qos": "2",
-        "datatype": "json",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 940,
         "wires": [
             [
                 "6d87d019ec8f50b8"
@@ -6645,27 +4865,6 @@
         ]
     },
     {
-        "id": "cd643d9399c19fa1",
-        "type": "ui_template",
-        "z": "5eedfd42acb6ab9d",
-        "group": "2e1da0c7f19845cd",
-        "name": "(S) Header 5",
-        "order": 1,
-        "width": 18,
-        "height": 2,
-        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 790,
-        "y": 920,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "6d87d019ec8f50b8",
         "type": "subflow:7e09aa9c425ed0e5",
         "z": "5eedfd42acb6ab9d",
@@ -6678,27 +4877,6 @@
             ],
             [
                 "fa0f1f15ec9683c2"
-            ]
-        ]
-    },
-    {
-        "id": "8f2cb8c6c78c1164",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Tracking 6",
-        "topic": "pinpointdatamanager/razorline/razorstn2/tracking",
-        "qos": "2",
-        "datatype": "json",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 100,
-        "y": 1080,
-        "wires": [
-            [
-                "ff21935187bcd802"
             ]
         ]
     },
@@ -6717,27 +4895,6 @@
         "inputs": 0,
         "x": 120,
         "y": 1140,
-        "wires": [
-            [
-                "ff21935187bcd802"
-            ]
-        ]
-    },
-    {
-        "id": "4d1f47cac126b151",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Bucket State 6",
-        "topic": "pinpointdatamanager/razorline/razorstn2/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1200,
         "wires": [
             [
                 "ff21935187bcd802"
@@ -6782,27 +4939,6 @@
         ]
     },
     {
-        "id": "ab25a49a2089965c",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Tracking 7",
-        "topic": "pinpointdatamanager/razorline/razorstn3/tracking",
-        "qos": "2",
-        "datatype": "json",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 100,
-        "y": 1280,
-        "wires": [
-            [
-                "16dd6f1a69d37454"
-            ]
-        ]
-    },
-    {
         "id": "90fbb88074856ad3",
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
@@ -6817,27 +4953,6 @@
         "inputs": 0,
         "x": 120,
         "y": 1340,
-        "wires": [
-            [
-                "16dd6f1a69d37454"
-            ]
-        ]
-    },
-    {
-        "id": "f3d1509ccb6074e7",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Bucket State 7",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1400,
         "wires": [
             [
                 "16dd6f1a69d37454"
@@ -6882,27 +4997,6 @@
         ]
     },
     {
-        "id": "697998a6e7873ad9",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Tracking 8",
-        "topic": "pinpointdatamanager/razorline/razorstn4/tracking",
-        "qos": "2",
-        "datatype": "json",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 100,
-        "y": 1480,
-        "wires": [
-            [
-                "974240a723c98524"
-            ]
-        ]
-    },
-    {
         "id": "814fe373e3c056be",
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
@@ -6917,27 +5011,6 @@
         "inputs": 0,
         "x": 120,
         "y": 1540,
-        "wires": [
-            [
-                "974240a723c98524"
-            ]
-        ]
-    },
-    {
-        "id": "332ae4b9927fd9c9",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Bucket State 8",
-        "topic": "pinpointdatamanager/razorline/razorstn4/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1600,
         "wires": [
             [
                 "974240a723c98524"
@@ -6982,27 +5055,6 @@
         ]
     },
     {
-        "id": "fa0f1f15ec9683c2",
-        "type": "ui_template",
-        "z": "5eedfd42acb6ab9d",
-        "group": "c263be4ca6df137a",
-        "name": "(M) Header 5",
-        "order": 1,
-        "width": 10,
-        "height": 2,
-        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use-multi\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 790,
-        "y": 960,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3c207f3e73fd8728",
         "type": "ui_template",
         "z": "5eedfd42acb6ab9d",
@@ -7019,27 +5071,6 @@
         "className": "",
         "x": 790,
         "y": 1160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aac79f73a2e47baa",
-        "type": "ui_template",
-        "z": "5eedfd42acb6ab9d",
-        "group": "77eddc1de9c1ddaf",
-        "name": "(M) Header 7",
-        "order": 1,
-        "width": 10,
-        "height": 2,
-        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use-multi\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 790,
-        "y": 1360,
         "wires": [
             []
         ]
@@ -7066,27 +5097,6 @@
         ]
     },
     {
-        "id": "397afd29c81aef88",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Tracking 9",
-        "topic": "pinpointdatamanager/razorline/razorstn1/tracking",
-        "qos": "2",
-        "datatype": "json",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 100,
-        "y": 1720,
-        "wires": [
-            [
-                "29abc15619b6ea74"
-            ]
-        ]
-    },
-    {
         "id": "be3f5acc7a195a77",
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
@@ -7101,27 +5111,6 @@
         "inputs": 0,
         "x": 120,
         "y": 1780,
-        "wires": [
-            [
-                "29abc15619b6ea74"
-            ]
-        ]
-    },
-    {
-        "id": "d19f944e8d149d23",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Bucket State 9",
-        "topic": "pinpointdatamanager/razorline/razorstn1/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 1840,
         "wires": [
             [
                 "29abc15619b6ea74"
@@ -7166,27 +5155,6 @@
         ]
     },
     {
-        "id": "76d33fa7ade55ccd",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Tracking 10",
-        "topic": "pinpointdatamanager/razorline/razorstn2/tracking",
-        "qos": "2",
-        "datatype": "json",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 110,
-        "y": 1920,
-        "wires": [
-            [
-                "db17828097994f04"
-            ]
-        ]
-    },
-    {
         "id": "340688d3719c905b",
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
@@ -7201,27 +5169,6 @@
         "inputs": 0,
         "x": 130,
         "y": 1980,
-        "wires": [
-            [
-                "db17828097994f04"
-            ]
-        ]
-    },
-    {
-        "id": "6587b2c6ea8f2da8",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Bucket State 10",
-        "topic": "pinpointdatamanager/razorline/razorstn2/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 2040,
         "wires": [
             [
                 "db17828097994f04"
@@ -7266,27 +5213,6 @@
         ]
     },
     {
-        "id": "deec4d8f78089461",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Tracking 11",
-        "topic": "pinpointdatamanager/razorline/razorstn3/tracking",
-        "qos": "2",
-        "datatype": "json",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 110,
-        "y": 2120,
-        "wires": [
-            [
-                "d82eeac2aa75172b"
-            ]
-        ]
-    },
-    {
         "id": "9514080fcf58d2ac",
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
@@ -7301,27 +5227,6 @@
         "inputs": 0,
         "x": 130,
         "y": 2180,
-        "wires": [
-            [
-                "d82eeac2aa75172b"
-            ]
-        ]
-    },
-    {
-        "id": "84ea44387beb1bf4",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Bucket State 11",
-        "topic": "pinpointdatamanager/razorline/razorstn3/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 2240,
         "wires": [
             [
                 "d82eeac2aa75172b"
@@ -7366,27 +5271,6 @@
         ]
     },
     {
-        "id": "78e42a6a44687bbf",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Tracking 12",
-        "topic": "pinpointdatamanager/razorline/razorstn4/tracking",
-        "qos": "2",
-        "datatype": "json",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 110,
-        "y": 2320,
-        "wires": [
-            [
-                "7c1c6897ca1d6cf4"
-            ]
-        ]
-    },
-    {
         "id": "bbf5ef15bb841922",
         "type": "mqtt in",
         "z": "5eedfd42acb6ab9d",
@@ -7401,27 +5285,6 @@
         "inputs": 0,
         "x": 130,
         "y": 2380,
-        "wires": [
-            [
-                "7c1c6897ca1d6cf4"
-            ]
-        ]
-    },
-    {
-        "id": "7b3fb70c0c7af1f6",
-        "type": "mqtt in",
-        "z": "5eedfd42acb6ab9d",
-        "name": "Bucket State 12",
-        "topic": "pinpointdatamanager/razorline/razorstn4/production/bucketstate",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 2440,
         "wires": [
             [
                 "7c1c6897ca1d6cf4"
@@ -7466,27 +5329,6 @@
         ]
     },
     {
-        "id": "0fde4ad5ca67cd3b",
-        "type": "ui_template",
-        "z": "5eedfd42acb6ab9d",
-        "group": "e4fbc8a4df7e3429",
-        "name": "(M) Header 9",
-        "order": 1,
-        "width": 10,
-        "height": 2,
-        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use-multi\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 790,
-        "y": 1800,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "92c37b936fc55f5d",
         "type": "ui_template",
         "z": "5eedfd42acb6ab9d",
@@ -7503,27 +5345,6 @@
         "className": "",
         "x": 800,
         "y": 2000,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "cd4d0eecd350765b",
-        "type": "ui_template",
-        "z": "5eedfd42acb6ab9d",
-        "group": "91c33a1c95225876",
-        "name": "(M) Header 11",
-        "order": 1,
-        "width": 10,
-        "height": 2,
-        "format": "<div ng-if=\"msg.html\">\n    <ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>\n</div>\n<div class=\"not-in-use-multi\" ng-if=\"!msg.html\">\n    Not in Use\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 800,
-        "y": 2200,
         "wires": [
             []
         ]
@@ -7620,62 +5441,17 @@
         "rules": [
             {
                 "t": "eq",
-                "v": "Razor_STN1",
+                "v": "test1",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Razor_STN2",
+                "v": "test2",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Razor_STN3",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Razor_STN4",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "a",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "a",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "a",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "a",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "a",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "a",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "a",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "a",
+                "v": "test3",
                 "vt": "str"
             }
         ],
@@ -7749,7 +5525,7 @@
         "type": "mqtt in",
         "z": "79e4e521aa2f0425",
         "name": "System Events 1",
-        "topic": "pinpointdatamanager/razorline/razorstn1/systemevents",
+        "topic": "test1/systemevents",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "d47490cf09efe9bc",
@@ -7808,27 +5584,6 @@
         ]
     },
     {
-        "id": "f98ee1a00088c072",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "26c9438cdf6ae260",
-        "name": "(S) Cycle Time 4",
-        "order": 2,
-        "width": 18,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2040,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "fdeaa7e108e4bad5",
         "type": "mqtt in",
         "z": "79e4e521aa2f0425",
@@ -7854,7 +5609,7 @@
         "type": "mqtt in",
         "z": "79e4e521aa2f0425",
         "name": "System Events 3",
-        "topic": "pinpointdatamanager/razorline/razorstn3/systemevents",
+        "topic": "test3/systemevents",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "d47490cf09efe9bc",
@@ -7867,27 +5622,6 @@
         "wires": [
             [
                 "6bd26720206af5cd"
-            ]
-        ]
-    },
-    {
-        "id": "044c990406300e8a",
-        "type": "mqtt in",
-        "z": "79e4e521aa2f0425",
-        "name": "System Events 4",
-        "topic": "pinpointdatamanager/razorline/razorstn4/systemevents",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "d47490cf09efe9bc",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 100,
-        "y": 220,
-        "wires": [
-            [
-                "67ccda4edcd4fa6c"
             ]
         ]
     },
@@ -8098,27 +5832,6 @@
         ]
     },
     {
-        "id": "093564f97b70cb20",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "26c9438cdf6ae260",
-        "name": "(S) Overcycle Timer 4",
-        "order": 5,
-        "width": 9,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2060,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "ca5004995d4c0e6b",
         "type": "ui_template",
         "z": "79e4e521aa2f0425",
@@ -8203,27 +5916,6 @@
         ]
     },
     {
-        "id": "9061f7c7919eccc0",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "cd5ad1d0bf7f8611",
-        "name": "(M) Cycle Time 4",
-        "order": 2,
-        "width": 10,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2050,
-        "y": 800,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "e8027e7cabb35c53",
         "type": "subflow:b5bc4f93293404da",
         "z": "79e4e521aa2f0425",
@@ -8267,27 +5959,6 @@
         "wires": []
     },
     {
-        "id": "a3097527f5739530",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "2e1da0c7f19845cd",
-        "name": "(S) Cycle Time 5",
-        "order": 2,
-        "width": 18,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2040,
-        "y": 980,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "1b3341cbcf0f0626",
         "type": "ui_template",
         "z": "79e4e521aa2f0425",
@@ -8309,27 +5980,6 @@
         ]
     },
     {
-        "id": "7c8ad30dd62ad59d",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "eec6fc29325eb423",
-        "name": "(S) Cycle Time 7",
-        "order": 2,
-        "width": 18,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2040,
-        "y": 1380,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "81266ec1b71ad82e",
         "type": "ui_template",
         "z": "79e4e521aa2f0425",
@@ -8346,27 +5996,6 @@
         "className": "",
         "x": 2040,
         "y": 1580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4350bf284c533305",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "2e1da0c7f19845cd",
-        "name": "(S) Overcycle Timer 5",
-        "order": 5,
-        "width": 9,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2060,
-        "y": 940,
         "wires": [
             []
         ]
@@ -8473,27 +6102,6 @@
         ]
     },
     {
-        "id": "e16315dd72405ae5",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "8bfc58d1d11203a5",
-        "name": "(S) Overcycle Timer 6",
-        "order": 5,
-        "width": 9,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2060,
-        "y": 1140,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "db985dfb27d59264",
         "type": "ui_template",
         "z": "79e4e521aa2f0425",
@@ -8510,27 +6118,6 @@
         "className": "",
         "x": 2040,
         "y": 1100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aec6fd2f401a0bc5",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "eec6fc29325eb423",
-        "name": "(S) Overcycle Timer 7",
-        "order": 5,
-        "width": 9,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2060,
-        "y": 1340,
         "wires": [
             []
         ]
@@ -8557,27 +6144,6 @@
         ]
     },
     {
-        "id": "55a4e7b4266bbfcd",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "c959665501acccad",
-        "name": "(S) Overcycle Timer 8",
-        "order": 5,
-        "width": 9,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2060,
-        "y": 1540,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "c5087508c0f9344b",
         "type": "ui_template",
         "z": "79e4e521aa2f0425",
@@ -8594,27 +6160,6 @@
         "className": "",
         "x": 2040,
         "y": 1500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6a5cedcb388853b3",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "c263be4ca6df137a",
-        "name": "(M) Cycle Time 5",
-        "order": 2,
-        "width": 10,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2050,
-        "y": 1020,
         "wires": [
             []
         ]
@@ -8641,27 +6186,6 @@
         ]
     },
     {
-        "id": "a9e64de169658225",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "77eddc1de9c1ddaf",
-        "name": "(M) Cycle Time 7",
-        "order": 2,
-        "width": 10,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2050,
-        "y": 1420,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "66c1e63497425538",
         "type": "ui_template",
         "z": "79e4e521aa2f0425",
@@ -8678,27 +6202,6 @@
         "className": "",
         "x": 2050,
         "y": 1620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a4fba5b906981dba",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "578a0a48150a5041",
-        "name": "(S) Cycle Time 9",
-        "order": 2,
-        "width": 18,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2040,
-        "y": 1820,
         "wires": [
             []
         ]
@@ -8725,27 +6228,6 @@
         ]
     },
     {
-        "id": "f444579fd9c0ee1f",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "d8e55885f2fba42a",
-        "name": "(S) Cycle Time 11",
-        "order": 2,
-        "width": 18,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2050,
-        "y": 2220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "a8a3cc5cd007c3b8",
         "type": "ui_template",
         "z": "79e4e521aa2f0425",
@@ -8762,27 +6244,6 @@
         "className": "",
         "x": 2050,
         "y": 2420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ae4b8f43825c4fac",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "578a0a48150a5041",
-        "name": "(S) Overcycle Timer 9",
-        "order": 5,
-        "width": 9,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2060,
-        "y": 1780,
         "wires": [
             []
         ]
@@ -8889,27 +6350,6 @@
         ]
     },
     {
-        "id": "fc3051172134b2c8",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "fe27d477317c1d1d",
-        "name": "(S) Overcycle Timer 10",
-        "order": 5,
-        "width": 9,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2060,
-        "y": 1980,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "c9c89be50f259090",
         "type": "ui_template",
         "z": "79e4e521aa2f0425",
@@ -8926,27 +6366,6 @@
         "className": "",
         "x": 2050,
         "y": 1940,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e6769cf9ac29fda2",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "d8e55885f2fba42a",
-        "name": "(S) Overcycle Timer 11",
-        "order": 5,
-        "width": 9,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2060,
-        "y": 2180,
         "wires": [
             []
         ]
@@ -8973,27 +6392,6 @@
         ]
     },
     {
-        "id": "36e57b05205e57dd",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "744638d47e910719",
-        "name": "(S) Overcycle Timer 12",
-        "order": 5,
-        "width": 9,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2060,
-        "y": 2380,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "99abf940924c2957",
         "type": "ui_template",
         "z": "79e4e521aa2f0425",
@@ -9015,27 +6413,6 @@
         ]
     },
     {
-        "id": "966b44dfa8e8970d",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "e4fbc8a4df7e3429",
-        "name": "(M) Cycle Time 9",
-        "order": 2,
-        "width": 10,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2050,
-        "y": 1860,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "2c9beb96e394afe0",
         "type": "ui_template",
         "z": "79e4e521aa2f0425",
@@ -9052,27 +6429,6 @@
         "className": "",
         "x": 2050,
         "y": 2060,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e0dea9626ac55a6c",
-        "type": "ui_template",
-        "z": "79e4e521aa2f0425",
-        "group": "91c33a1c95225876",
-        "name": "(M) Cycle Time 11",
-        "order": 2,
-        "width": 10,
-        "height": 2,
-        "format": "<ng-bind-html ng-bind-html=\"msg.html | trusted\"></ng-bind-html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2050,
-        "y": 2260,
         "wires": [
             []
         ]
