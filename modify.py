@@ -1,5 +1,17 @@
 import json
 import os
+import read
+
+# Helper function to find the station number from the MQTT in node name
+def extract_station_number(node_name):
+    # This regex pattern finds one or more digits at the end of the string.
+    match = re.search(r'\d+$', node_name)
+    if match:
+        # Convert the found digits into an integer. Subtracts one so it is an index of an list
+        return int(match.group()) - 1
+    else:
+        # Handle cases where no number is found.
+        return None 
 
 # File setup for loading and saving JSON
 original_file_name = 'flows.json'
@@ -27,10 +39,10 @@ print(""" You will need:
 while True:
     try:
         num_stations = int(input("Enter the number of stations that will be displayed on the dashboard: "))
-        if 4 <= num_stations <= 10:
+        if 4 <= num_stations <= 12:
             break
         else:
-            print("Please enter an integer between 4 and 10.")
+            print("Please enter an integer between 4 and 12.")
     except ValueError:
         print("Invalid input. Please enter an integer.")
 
@@ -82,16 +94,17 @@ for node in data:
         for key in topics:
             if key in node_name:
                 topic = topics[key]
-                if node_name[-1].isdigit():
-                    station_number = int(node_name[-1]) - 1
+                station_number = extract_station_number(node_name)
+                if station_number is not None:
                     node['topic'] = topic.replace(station_names[0], station_names[station_number])
-                else:
-                    node['topic'] = topic
        
     elif node_type == 'ui_tab':
-        if node_name[-1].isdigit():
-            station_number = int(node_name[-1]) - 1
+        station_number = extract_station_number(node_name)
+        if station_number is not None:
             node['name'] = display_names[station_number]
+            
+    elif node_type == 'switch':
+        ################################ CONTINUE HERE
 
 # Writing the modified JSON to the new file
 with open(new_file_name, 'w') as file:
