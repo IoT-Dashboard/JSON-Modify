@@ -74,8 +74,10 @@ topics = {
     'Andon Events': bucket_state_topic.replace('production/bucketstate', 'andonevents')
 }
 
-indices_to_delete = []
+indices_to_delete = set()
 index = 0
+subflow_indices = {}
+subflows_to_delete = set()
 
 # Updating node topics and names in the JSON data
 for node in data:
@@ -91,7 +93,9 @@ for node in data:
                     if station_number < num_stations:
                         node['topic'] = topic.replace(station_names[0], station_names[station_number])
                     else:
-                        indices_to_delete.append(index)
+                        attached_subflow = node['wires'][0][0]
+                        subflows_to_delete.add(attached_subflow)
+                        indices_to_delete.add(index)
                 else:
                     if 'Likely' in node['name']:
                         node['topic'] = topics['Likely']
@@ -104,7 +108,7 @@ for node in data:
             if station_number < num_stations:
                 node['name'] = display_names[station_number]
             else:
-                indices_to_delete.append(index)
+                indices_to_delete.add(index)
             
     elif node_type == 'switch':
         new_rules = node['rules'][0 : num_stations]
@@ -116,22 +120,39 @@ for node in data:
     elif node_type == 'ui_template':
         station_number = extract_station_number(node_name)
         if station_number is not None and station_number >= num_stations:
-            indices_to_delete.append(index)
+            indices_to_delete.add(index)
        
     elif node_type == 'ui_group':
         station_number = extract_station_number(node_name)
         if station_number is not None and station_number >= num_stations:
-            indices_to_delete.append(index)
+            indices_to_delete.add(index)
+        elif node['name'] == 'Station':
+            station_number = get_station_from_group(node['id'])
+            if station_number > num_stations:
+                indices_to_delete.add(index)
             
     elif node_type == 'ui_tab':
         station_number = extract_station_number(node_name)
         if station_number is not None and station_number >= num_stations:
-            indices_to_delete.append(index)
-        
+            indices_to_delete.add(index)
+    
+    elif 'subflow' in node['type']:
+        group_id = node['id']
+        subflow_indices[group_id] = index
+    
     index += 1
 
-indices_to_delete.sort(reverse=True)
-for index in indices_to_delete:
+
+# Create a set with all the indices to delete
+to_delete = indices_to_delete.union(subflows_to_delete)
+for item in to_delete:
+    if isinstance(item, str):
+        to_delete.remove(item)
+        to_delete.add(subflow_indices[item])
+        
+# Convert the set to a list then delete the indices
+sorted_indices = sorted(to_delete, reverse=True)
+for index in sorted_indices:
     data.pop(index)
 
 # Writing the modified JSON to the new file

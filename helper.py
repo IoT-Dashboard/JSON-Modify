@@ -46,6 +46,27 @@ def get_group_id(view_type, station_number):
         return single_station_groups[station_number]
     
 
+# Get single station view from group id
+def get_station_from_group(group_id):
+    single_station_groups = {
+        '8bd8cbf3c40f1f99': 1,
+        'b114a68376e01b10': 2,
+        '12ebaf6110cabd38': 3,
+        '26c9438cdf6ae260': 4,
+        '2e1da0c7f19845cd': 5,
+        '8bfc58d1d11203a5': 6,
+        'eec6fc29325eb423': 7,
+        'c959665501acccad': 8,
+        '578a0a48150a5041': 9,
+        'fe27d477317c1d1d': 10,
+        'd8e55885f2fba42a': 11,
+        '744638d47e910719': 12
+    }
+    
+    if group_id in single_station_groups:
+        return single_station_groups[group_id]
+
+
 # Remove node if greater than the station number
 def check_to_remove_node(data, node, num_stations):
     station_number = extract_station_number(node['name'])
