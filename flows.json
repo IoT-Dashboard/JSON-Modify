@@ -1273,16 +1273,6 @@
         "className": ""
     },
     {
-        "id": "4f84c259555fe9f5",
-        "type": "ui_spacer",
-        "z": "722fb55c0b4e180b",
-        "name": "spacer",
-        "group": "26c9438cdf6ae260",
-        "order": 1,
-        "width": 1,
-        "height": 1
-    },
-    {
         "id": "8bfc58d1d11203a5",
         "type": "ui_group",
         "name": "Station",

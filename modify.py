@@ -78,6 +78,7 @@ indices_to_delete = set()
 index = 0
 subflow_indices = {}
 subflows_to_delete = set()
+IMN_y_positions = []
 
 # Updating node topics and names in the JSON data
 for node in data:
@@ -111,11 +112,7 @@ for node in data:
                 indices_to_delete.add(index)
             
     elif node_type == 'switch':
-        new_rules = node['rules'][0 : num_stations]
-        for i in range(len(new_rules)):
-            new_rules[i]['v'] = station_names[i]
-        node['rules'] = new_rules
-        
+        node['rules'] = node['rules'][0 : num_stations]
         
     elif node_type == 'ui_template':
         station_number = extract_station_number(node_name)
@@ -139,9 +136,18 @@ for node in data:
     elif 'subflow' in node['type']:
         group_id = node['id']
         subflow_indices[group_id] = index
+        
+        # Keep dict of IMN subflows and their y position to know which to delete
+        if '15111a9d6510dc85' in node['type']:
+            id = node['id']
+            IMN_y_positions.append({'index': index, 'y': node['y']})
     
     index += 1
 
+# Determine which IMN flows to remove based on y position and number of stations
+IMN_y_positions = sorted(IMN_y_positions, key=lambda d: d['y'])
+for item in IMN_y_positions[num_stations:]:
+    indices_to_delete.add(item['index'])
 
 # Create a set with all the indices to delete
 to_delete = indices_to_delete.union(subflows_to_delete)
