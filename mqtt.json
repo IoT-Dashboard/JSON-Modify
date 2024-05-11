@@ -1,0 +1,30 @@
+{
+  "EventManagerName": "PINpointEventManager",
+  "TrackingManagerName": "PINpointTrackingManager",
+  "Stations": [
+    {
+      "LineName": "LINE1",
+      "Name": "STN1"
+    },
+    {
+      "LineName": "LINE1",
+      "Name": "STN2"
+    },
+    {
+      "LineName": "LINE1",
+      "Name": "STN3"
+    },
+	{
+      "LineName": "LINE2",
+      "Name": "STN4"
+    },
+    {
+      "LineName": "LINE2",
+      "Name": "STN5"
+    },
+    {
+      "LineName": "LINE2",
+      "Name": "STN6"
+    }
+  ]
+}
