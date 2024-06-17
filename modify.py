@@ -8,7 +8,6 @@ base_new_file_name = 'new_flows'
 counter = 1
 new_file_name = f"{base_new_file_name}.json"
 folder_path = 'Dashboard_Files/'
-file_path = folder_path + new_file_name
 
 # File name for json with mqtt information
 mqtt_file_name = "mqtt.json"
@@ -17,6 +16,7 @@ mqtt_file_name = "mqtt.json"
 while os.path.exists(new_file_name):
     new_file_name = f"{base_new_file_name}_{counter}.json"
     counter += 1
+file_path = folder_path + new_file_name
 
 # Loading the original JSON data from file
 with open(original_file_name, 'r') as file:
