@@ -6,17 +6,15 @@ from helper import *
 original_file_name = 'flows.json'
 base_new_file_name = 'new_flows'
 counter = 1
-new_file_name = f"{base_new_file_name}.json"
-folder_path = 'Dashboard_Files/'
+new_file_name = f"Dashboard_Files/{base_new_file_name}.json"
 
 # File name for json with mqtt information
 mqtt_file_name = "mqtt.json"
 
 # Ensuring the output file name is unique by incrementing a counter if the file already exists
 while os.path.exists(new_file_name):
-    new_file_name = f"{base_new_file_name}_{counter}.json"
+    new_file_name = f"Dashboard_Files/{base_new_file_name}_{counter}.json"
     counter += 1
-file_path = folder_path + new_file_name
 
 # Loading the original JSON data from file
 with open(original_file_name, 'r') as file:
@@ -141,7 +139,7 @@ for index in sorted_indices:
     data.pop(index)
 
 # Writing the modified JSON to the new file
-with open(file_path, 'w') as file:
+with open(new_file_name, 'w') as file:
     json.dump(data, file, indent=4)
 
 # Final user prompt for successful operation
